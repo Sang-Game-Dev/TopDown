@@ -20,12 +20,14 @@ public class Enemyhealth : MonoBehaviour
     void Start()
     {
         currentHealth = maxHealth;
+        healthBar.SetMaxHealth(maxHealth);
         enemySprite = GetComponent<SpriteRenderer>();
     }
 
     // Update is called once per frame
     void Update()
     {
+        
         if (flashActive)
         {
             if (flashCounter > flashLength * .99f)
@@ -71,7 +73,7 @@ public class Enemyhealth : MonoBehaviour
         flashCounter = flashLength;
 
         currentHealth -= damage;
-        //healthBar.SetHealth(currentHealth);
+        healthBar.SetHealth(currentHealth);
 
 
         if (currentHealth <= 0)

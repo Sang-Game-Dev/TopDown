@@ -6,6 +6,7 @@ public class KnockBack : MonoBehaviour
 {
     public float thrust;
     public float knockTime;
+    private bool isKnockBack;
     
 
 
@@ -21,13 +22,12 @@ public class KnockBack : MonoBehaviour
         
     }
 
-    private void OnTrigerEnter2D(Collider2D other)
+    private void OnTriggerEnter2D(Collider2D other)
     {
-
         if (other.gameObject.CompareTag("Enemy"))
         {
             Rigidbody2D enemy = other.GetComponent<Rigidbody2D>();
-            if(enemy != null)
+            if (enemy != null && isKnockBack == false) // using bool variable to stop update tranform
             {
 
                 Vector2 difference = enemy.transform.position - transform.position;
@@ -44,6 +44,7 @@ public class KnockBack : MonoBehaviour
         {
             yield return new WaitForSeconds(knockTime);
             enemy.velocity = Vector2.zero;
+            
 
         }
     }

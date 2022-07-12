@@ -47,6 +47,8 @@ public class Zombie : MonoBehaviour
         animator.SetFloat("moveY", target.position.y - transform.position.y);
 
         transform.position = Vector3.MoveTowards(transform.position, target.transform.position, speed * Time.deltaTime);
+        //Vector3 temp = Vector3.MoveTowards(transform.position, target.transform.position, speed * Time.deltaTime);
+        //rb.MovePosition(temp);
 
     }
 
