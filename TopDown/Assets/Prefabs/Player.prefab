@@ -344,7 +344,6 @@ GameObject:
   - component: {fileID: 245064554}
   - component: {fileID: 245064555}
   - component: {fileID: 245064556}
-  - component: {fileID: 711826425}
   m_Layer: 20
   m_Name: 'HitBox '
   m_TagString: PlayerWeapon
@@ -456,20 +455,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &711826425
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 245064552}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1d584900e8ad20648b7f1abfbed14796, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  thrust: 7
-  knockTime: 0.3
 --- !u!1 &294841957
 GameObject:
   m_ObjectHideFlags: 0
@@ -801,7 +786,6 @@ GameObject:
   - component: {fileID: 754009589}
   - component: {fileID: 754009590}
   - component: {fileID: 754009591}
-  - component: {fileID: 1410824201}
   m_Layer: 20
   m_Name: 'HitBox  '
   m_TagString: PlayerWeapon
@@ -913,20 +897,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &1410824201
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 754009587}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1d584900e8ad20648b7f1abfbed14796, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  thrust: 7
-  knockTime: 0.3
 --- !u!1 &893798919
 GameObject:
   m_ObjectHideFlags: 0
@@ -1389,7 +1359,6 @@ GameObject:
   - component: {fileID: 1456690495}
   - component: {fileID: 1456690496}
   - component: {fileID: 1456690497}
-  - component: {fileID: 2021744872}
   m_Layer: 20
   m_Name: HitBox
   m_TagString: PlayerWeapon
@@ -1501,20 +1470,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &2021744872
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1456690493}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1d584900e8ad20648b7f1abfbed14796, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  thrust: 7
-  knockTime: 0.3
 --- !u!1 &1485783386
 GameObject:
   m_ObjectHideFlags: 0
@@ -1776,7 +1731,6 @@ GameObject:
   - component: {fileID: 1654732666}
   - component: {fileID: 1654732667}
   - component: {fileID: 1654732668}
-  - component: {fileID: 1188069935}
   m_Layer: 20
   m_Name: 'HitBox '
   m_TagString: PlayerWeapon
@@ -1888,20 +1842,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &1188069935
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1654732664}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1d584900e8ad20648b7f1abfbed14796, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  thrust: 7
-  knockTime: 0.3
 --- !u!1 &1960131385
 GameObject:
   m_ObjectHideFlags: 0
@@ -2162,7 +2102,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: -0.36251044}
@@ -2190,7 +2130,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 91cb7412a4ed05f4dbd49e49bcee5519, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 800
+  speed: 900
 --- !u!114 &4455904906267510801
 MonoBehaviour:
   m_ObjectHideFlags: 0
