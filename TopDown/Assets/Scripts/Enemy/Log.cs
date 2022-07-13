@@ -15,7 +15,7 @@ public class Log : Enemy
 
     private void Start()
     {
-        currentState = EnemyState.idle;
+        
         rb = GetComponent<Rigidbody2D>();
         target = GameObject.FindWithTag("Player").transform;
     }
@@ -28,21 +28,20 @@ public class Log : Enemy
     void CheckDistance()
     {
         if (Vector3.Distance(target.transform.position, transform.position) <= chaseRadius && Vector3.Distance(target.transform.position, transform.position) > attackRadius)
-        {
-            if (currentState == EnemyState.idle || currentState == EnemyState.walk && currentState != EnemyState.stagger)
-            {
+        { 
                 Vector3 temp = Vector3.MoveTowards(transform.position, target.transform.position, moveSpeed * Time.deltaTime);
                 rb.MovePosition(temp);
-                ChangeState(EnemyState.walk);
-            }
+                
+            
         }
     }
 
-    private void ChangeState(EnemyState newState)
+    private void OnTriggerEnter2D(Collider2D other)
     {
-        if(currentState != newState)
+        if (other.tag == "PlayerWeapon")
         {
-            currentState = newState;
+            Vector2 difference = transform.position - other.transform.position;
+            transform.position = new Vector2(transform.position.x -difference.x, transform.position.y - difference.y);
         }
     }
 }

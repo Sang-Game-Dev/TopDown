@@ -118,7 +118,7 @@ Rigidbody2D:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7264262615390381138}
   m_BodyType: 0
-  m_Simulated: 1
+  m_Simulated: 0
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
   m_Mass: 1
@@ -168,7 +168,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: de8a2332e3724d844b476c00db8ac129, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHealth: 100
+  maxHealth: 1000
   flashLength: 0.5
   healthBar: {fileID: 6942701566278879291}
 --- !u!114 &2020480648
@@ -184,8 +184,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 3
-  maxRange: 4
-  minRange: 1
+  maxRange: 3
+  minRange: 0.75
   homePos: {fileID: 0}
 --- !u!114 &2020480649
 MonoBehaviour:

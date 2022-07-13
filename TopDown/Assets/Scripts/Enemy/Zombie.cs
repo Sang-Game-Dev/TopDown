@@ -11,13 +11,14 @@ public class Zombie : MonoBehaviour
     [SerializeField] float speed;
     [SerializeField] float maxRange;
     [SerializeField] float minRange;
-
+    KnockBack knockback;
 
     [Header("Public")]
     public Transform homePos;
 
     void Start()
     {
+        knockback = FindObjectOfType<KnockBack>();
         rb = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
         target = FindObjectOfType<PlayerController>().transform;
@@ -27,7 +28,7 @@ public class Zombie : MonoBehaviour
     void Update()
     {
 
-        if (Vector3.Distance(target.position, transform.position) <= maxRange && Vector3.Distance(target.position, transform.position) >= minRange)
+        if (Vector3.Distance(target.position, transform.position) <= maxRange && Vector3.Distance(target.position, transform.position) >= minRange )
         {
             FollowPlayer();
         }
@@ -47,9 +48,6 @@ public class Zombie : MonoBehaviour
         animator.SetFloat("moveY", target.position.y - transform.position.y);
 
         transform.position = Vector3.MoveTowards(transform.position, target.transform.position, speed * Time.deltaTime);
-        //Vector3 temp = Vector3.MoveTowards(transform.position, target.transform.position, speed * Time.deltaTime);
-        //rb.MovePosition(temp);
-
     }
 
     public void GoHome()
@@ -62,12 +60,16 @@ public class Zombie : MonoBehaviour
             animator.SetBool("isMoving", false);
     }
 
-    //private void OnTriggerEnter2D(Collider2D other)
-    //{
-    //    if (other.tag == "PlayerWeapon")
-    //    {
-    //        Vector2 difference = transform.position - other.transform.position;
-    //        transform.position = new Vector2(transform.position.x - 5, transform.position.y + difference.y);
-    //    }
-    //}
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+
+        if (other.tag == "PlayerWeapon")
+        {
+            Vector2 difference = transform.position - other.transform.position;
+            transform.position = new Vector2(transform.position.x + difference.x, transform.position.y + difference.y);
+        }
+    }
+
+
+
 }
