@@ -4116,10 +4116,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 1533551600, guid: e293a96141db8f54880b4bb3cadda0d0, type: 3}
-      propertyPath: m_IsTrigger
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 4455904906267510801, guid: e293a96141db8f54880b4bb3cadda0d0,
         type: 3}
       propertyPath: healthBar
@@ -16206,21 +16202,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Zombie_03
-      objectReference: {fileID: 0}
-    - target: {fileID: 4240119962210755106, guid: 62389f183cb54834381e81d84aaa4eb2,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7735780756650175533, guid: 62389f183cb54834381e81d84aaa4eb2,
-        type: 3}
-      propertyPath: m_AnchorMax.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7735780756650175533, guid: 62389f183cb54834381e81d84aaa4eb2,
-        type: 3}
-      propertyPath: m_AnchorMax.y
-      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 62389f183cb54834381e81d84aaa4eb2, type: 3}
@@ -29177,21 +29158,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Skeleton
       objectReference: {fileID: 0}
-    - target: {fileID: 7566522962608232631, guid: 778ffbc11154b1f4bb59523748945e24,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7735780756849458055, guid: 778ffbc11154b1f4bb59523748945e24,
-        type: 3}
-      propertyPath: m_AnchorMax.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7735780756849458055, guid: 778ffbc11154b1f4bb59523748945e24,
-        type: 3}
-      propertyPath: m_AnchorMax.y
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 7735780757265230552, guid: 778ffbc11154b1f4bb59523748945e24,
         type: 3}
       propertyPath: m_Camera
@@ -32216,10 +32182,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 2020480646, guid: 1d9f393d7a9a2a74da5585a9276342f8, type: 3}
-      propertyPath: m_Simulated
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 7264262615390381137, guid: 1d9f393d7a9a2a74da5585a9276342f8,
         type: 3}
       propertyPath: m_RootOrder
@@ -32280,23 +32242,7 @@ PrefabInstance:
       propertyPath: m_Name
       value: Zombie_02
       objectReference: {fileID: 0}
-    - target: {fileID: 7264262615390381138, guid: 1d9f393d7a9a2a74da5585a9276342f8,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7735780755952380403, guid: 1d9f393d7a9a2a74da5585a9276342f8,
-        type: 3}
-      propertyPath: m_AnchorMax.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7735780755952380403, guid: 1d9f393d7a9a2a74da5585a9276342f8,
-        type: 3}
-      propertyPath: m_AnchorMax.y
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 2020480648, guid: 1d9f393d7a9a2a74da5585a9276342f8, type: 3}
+    m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1d9f393d7a9a2a74da5585a9276342f8, type: 3}
 --- !u!1001 &1813492990
 PrefabInstance:
@@ -33577,28 +33523,6 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1951739337}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &1957454783 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 7264262615390381138, guid: 1d9f393d7a9a2a74da5585a9276342f8,
-    type: 3}
-  m_PrefabInstance: {fileID: 1808178077}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1957454785
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1957454783}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 322a6a27a2781eb4baa8d9e5842bb1b6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 3
-  maxRange: 3
-  minRange: 0.75
-  homePos: {fileID: 0}
 --- !u!1001 &1961154745
 PrefabInstance:
   m_ObjectHideFlags: 0
