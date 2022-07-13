@@ -14,15 +14,15 @@ GameObject:
   - component: {fileID: 2020480646}
   - component: {fileID: 2020480645}
   - component: {fileID: 2020480647}
-  - component: {fileID: 2020480648}
   - component: {fileID: 2020480649}
+  - component: {fileID: 1957454785}
   m_Layer: 0
   m_Name: Zombie_02
   m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &7264262615390381137
 Transform:
   m_ObjectHideFlags: 0
@@ -118,7 +118,7 @@ Rigidbody2D:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7264262615390381138}
   m_BodyType: 0
-  m_Simulated: 0
+  m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
   m_Mass: 1
@@ -171,22 +171,6 @@ MonoBehaviour:
   maxHealth: 1000
   flashLength: 0.5
   healthBar: {fileID: 6942701566278879291}
---- !u!114 &2020480648
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7264262615390381138}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 258ed3cb5f7951247aa33b0b0df63041, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 3
-  maxRange: 3
-  minRange: 0.75
-  homePos: {fileID: 0}
 --- !u!114 &2020480649
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -200,6 +184,22 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Damage: 20
+--- !u!114 &1957454785
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7264262615390381138}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 322a6a27a2781eb4baa8d9e5842bb1b6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 3
+  maxRange: 3
+  minRange: 0.75
+  homePos: {fileID: 0}
 --- !u!1001 &1628858389
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -320,12 +320,12 @@ PrefabInstance:
     - target: {fileID: 7735780757579121126, guid: f490b5bbeff5acd49a85aa5bd3924e69,
         type: 3}
       propertyPath: m_AnchorMax.x
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7735780757579121126, guid: f490b5bbeff5acd49a85aa5bd3924e69,
         type: 3}
       propertyPath: m_AnchorMax.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f490b5bbeff5acd49a85aa5bd3924e69, type: 3}
