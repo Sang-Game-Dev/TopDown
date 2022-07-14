@@ -28,7 +28,7 @@ public class Zombie : MonoBehaviour
     void Update()
     {
 
-        if (Vector3.Distance(target.position, transform.position) <= maxRange && Vector3.Distance(target.position, transform.position) >= minRange )
+        if (Vector3.Distance(target.position, transform.position) <= maxRange && Vector3.Distance(target.position, transform.position) >= minRange)
         {
             FollowPlayer();
         }
@@ -47,7 +47,7 @@ public class Zombie : MonoBehaviour
         animator.SetFloat("moveX", target.position.x - transform.position.x);
         animator.SetFloat("moveY", target.position.y - transform.position.y);
 
-        transform.position = Vector3.MoveTowards(transform.position, target.transform.position, speed * Time.deltaTime);
+        transform.position = Vector3.MoveTowards(transform.position, target.transform.position , speed * Time.deltaTime);
     }
 
     public void GoHome()
