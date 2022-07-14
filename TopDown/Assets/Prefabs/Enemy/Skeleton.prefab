@@ -17,7 +17,7 @@ GameObject:
   - component: {fileID: 240451739}
   - component: {fileID: 816784722}
   - component: {fileID: 816784723}
-  m_Layer: 20
+  m_Layer: 0
   m_Name: Skeleton
   m_TagString: Enemy
   m_Icon: {fileID: 0}
@@ -77,7 +77,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -1869315837
-  m_SortingLayer: 1
+  m_SortingLayer: 0
   m_SortingOrder: 2
   m_Sprite: {fileID: 8829185630807857353, guid: 20ef73b3c9b26814a85346d569e4fecc,
     type: 3}
@@ -224,6 +224,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 7566522962608232624}
     m_Modifications:
+    - target: {fileID: 7735780755653093534, guid: f490b5bbeff5acd49a85aa5bd3924e69,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7735780757154992313, guid: f490b5bbeff5acd49a85aa5bd3924e69,
         type: 3}
       propertyPath: m_Camera
@@ -233,6 +238,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: EnemyHP
+      objectReference: {fileID: 0}
+    - target: {fileID: 7735780757154992314, guid: f490b5bbeff5acd49a85aa5bd3924e69,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7735780757154992318, guid: f490b5bbeff5acd49a85aa5bd3924e69,
         type: 3}
@@ -339,15 +349,25 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 7735780757579121126, guid: f490b5bbeff5acd49a85aa5bd3924e69,
+    - target: {fileID: 7735780757500365981, guid: f490b5bbeff5acd49a85aa5bd3924e69,
         type: 3}
-      propertyPath: m_AnchorMax.x
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7735780757579121121, guid: f490b5bbeff5acd49a85aa5bd3924e69,
+        type: 3}
+      propertyPath: m_Layer
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7735780757579121126, guid: f490b5bbeff5acd49a85aa5bd3924e69,
         type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7735780757579121126, guid: f490b5bbeff5acd49a85aa5bd3924e69,
+        type: 3}
       propertyPath: m_AnchorMax.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f490b5bbeff5acd49a85aa5bd3924e69, type: 3}
