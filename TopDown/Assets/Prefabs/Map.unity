@@ -123,7 +123,11 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+<<<<<<< HEAD
 --- !u!1 &632963543
+=======
+--- !u!1 &1287237798
+>>>>>>> ef25ee46f2a2e5d108bd4ea3c682ad4f997f29c7
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -131,16 +135,17 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 632963544}
-  - component: {fileID: 632963546}
-  - component: {fileID: 632963545}
-  m_Layer: 20
-  m_Name: Ground
+  - component: {fileID: 1287237801}
+  - component: {fileID: 1287237800}
+  - component: {fileID: 1287237799}
+  m_Layer: 0
+  m_Name: Camera
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+<<<<<<< HEAD
 --- !u!4 &632963544
 Transform:
   m_ObjectHideFlags: 0
@@ -25241,20 +25246,23 @@ GameObject:
   m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!81 &1832742414
+=======
+--- !u!81 &1287237799
+>>>>>>> ef25ee46f2a2e5d108bd4ea3c682ad4f997f29c7
 AudioListener:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1832742413}
+  m_GameObject: {fileID: 1287237798}
   m_Enabled: 1
---- !u!20 &1832742415
+--- !u!20 &1287237800
 Camera:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1832742413}
+  m_GameObject: {fileID: 1287237798}
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 1
@@ -25274,9 +25282,9 @@ Camera:
   near clip plane: 0.3
   far clip plane: 1000
   field of view: 60
-  orthographic: 1
+  orthographic: 0
   orthographic size: 5
-  m_Depth: -1
+  m_Depth: 0
   m_CullingMask:
     serializedVersion: 2
     m_Bits: 4294967295
@@ -25291,20 +25299,21 @@ Camera:
   m_OcclusionCulling: 1
   m_StereoConvergence: 10
   m_StereoSeparation: 0.022
---- !u!4 &1832742416
+--- !u!4 &1287237801
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1832742413}
+  m_GameObject: {fileID: 1287237798}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -10}
+  m_LocalPosition: {x: 6.2090173, y: 11.341829, z: -91.67057}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+<<<<<<< HEAD
 --- !u!114 &1832742417
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -91939,3 +91948,5 @@ Tilemap:
     e31: 0
     e32: 0
     e33: 1
+=======
+>>>>>>> ef25ee46f2a2e5d108bd4ea3c682ad4f997f29c7
