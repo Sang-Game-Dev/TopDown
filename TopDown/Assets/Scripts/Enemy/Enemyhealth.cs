@@ -86,23 +86,14 @@ public class Enemyhealth : MonoBehaviour
 
         if (CurrentHealth <= 0)
         {
-            //GameObject emty =  Instantiate(SpawnItems[Random.Range(0, SpawnItems.Length)], this.transform);
-            Dead();
+
+            Destroy(gameObject);
             Instantiate(SpawnItems[Random.Range(0, SpawnItems.Length)], gameObject.transform.position, Quaternion.identity);
-            //Destroy(gameObject);
-            //isDrop = true;
-            //Dead();
+           
 
         }
     }
-    void Dead()
-    {
-        Destroy(gameObject);
-        //if (isDrop)
-        //{
-        //    Instantiate(SpawnItems[Random.Range(0, SpawnItems.Length)], this.transform);
-        //}
-    }
+
 
 
 }
