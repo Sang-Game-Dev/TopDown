@@ -13,9 +13,9 @@ GameObject:
   - component: {fileID: 558651165896066158}
   - component: {fileID: 8533462092866300049}
   - component: {fileID: 4217421413525628057}
-  - component: {fileID: 6069548509037178368}
   - component: {fileID: 935976667097061947}
   - component: {fileID: 6240834495789074581}
+  - component: {fileID: 6069548509037178368}
   m_Layer: 0
   m_Name: Zombie_04
   m_TagString: Enemy
@@ -75,8 +75,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -278362447
+  m_SortingLayer: 2
   m_SortingOrder: 2
   m_Sprite: {fileID: -4363681815367119060, guid: ad830e4532f4c4d42b449dc805aea67b,
     type: 3}
@@ -156,22 +156,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.73387563, y: 0.9081582}
   m_EdgeRadius: 0
---- !u!114 &6069548509037178368
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 558651165896066159}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 322a6a27a2781eb4baa8d9e5842bb1b6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 1.5
-  maxRange: 3
-  minRange: 0.75
-  homePos: {fileID: 0}
 --- !u!114 &935976667097061947
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -200,6 +184,22 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Damage: 20
+--- !u!114 &6069548509037178368
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 558651165896066159}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 322a6a27a2781eb4baa8d9e5842bb1b6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 5
+  maxRange: 3
+  minRange: 0.75
+  homePos: {fileID: 0}
 --- !u!1001 &1393481675
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -207,6 +207,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 558651165896066156}
     m_Modifications:
+    - target: {fileID: 7735780757154992313, guid: f490b5bbeff5acd49a85aa5bd3924e69,
+        type: 3}
+      propertyPath: m_SortingLayerID
+      value: -278362447
+      objectReference: {fileID: 0}
     - target: {fileID: 7735780757154992314, guid: f490b5bbeff5acd49a85aa5bd3924e69,
         type: 3}
       propertyPath: m_Name

@@ -49,7 +49,7 @@ public class Skeleton : MonoBehaviour
         animator.SetFloat("moveY", target.position.y-transform.position.y); 
         
         transform.position = Vector3.MoveTowards(transform.position,target.transform.position,Speed*Time.deltaTime);
-       
+        
     }
 
     public void GoHome()
@@ -58,7 +58,7 @@ public class Skeleton : MonoBehaviour
         animator.SetFloat("moveX", homePos.position.x - transform.position.x);
         animator.SetFloat("moveY", homePos.position.y - transform.position.y);
         transform.position = Vector3.MoveTowards(transform.position, homePos.position, Speed * Time.deltaTime);
-        
+     
         if (Vector3.Distance(transform.position, homePos.position) == 0)
             animator.SetBool("isMoving", false);
     }

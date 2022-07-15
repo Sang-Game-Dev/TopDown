@@ -19,7 +19,6 @@ public class Zombie : MonoBehaviour
 
     void Start()
     {
-
         rb = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
         target = FindObjectOfType<PlayerController>().transform;
@@ -48,8 +47,8 @@ public class Zombie : MonoBehaviour
         animator.SetBool("isMoving", true);
         animator.SetFloat("moveX", target.position.x - transform.position.x);
         animator.SetFloat("moveY", target.position.y - transform.position.y);
-
         transform.position = Vector3.MoveTowards(transform.position, target.transform.position , Speed * Time.deltaTime);
+        //transform.position = new Vector3(transform.position.x, transform.position.y, 0);
     }
 
     public void GoHome()
@@ -58,7 +57,7 @@ public class Zombie : MonoBehaviour
         animator.SetFloat("moveX", homePos.position.x - transform.position.x);
         animator.SetFloat("moveY", homePos.position.y - transform.position.y);
         transform.position = Vector3.MoveTowards(transform.position, homePos.position, Speed * Time.deltaTime);
-
+        //transform.position = new Vector3(transform.position.x, transform.position.y, 0);
         if (Vector3.Distance(transform.position, homePos.position) == 0)
             animator.SetBool("isMoving", false);
     }

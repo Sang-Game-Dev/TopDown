@@ -7,8 +7,8 @@ public class PlayerController : MonoBehaviour
     [SerializeField] float speed;
     private Animator animator;
     Rigidbody2D rb;
-    private float attackTime = .5f;
-    private float attackCounter = .5f;
+    private float attackTime = .2f;
+    private float attackCounter = .2f;
     private bool isAttacking;
 
     private void Start()

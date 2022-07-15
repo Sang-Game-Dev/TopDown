@@ -13,8 +13,8 @@ GameObject:
   - component: {fileID: 4240119962210755107}
   - component: {fileID: 1683262351}
   - component: {fileID: 1683262352}
-  - component: {fileID: 1683262348}
   - component: {fileID: 1683262349}
+  - component: {fileID: 1683262348}
   - component: {fileID: 1683262350}
   m_Layer: 0
   m_Name: Zombie_03
@@ -75,8 +75,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -278362447
+  m_SortingLayer: 2
   m_SortingOrder: 2
   m_Sprite: {fileID: -8620679621320937999, guid: 8eab5f46dde731c47b7277a4a42336ef,
     type: 3}
@@ -156,19 +156,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.72745675, y: 0.9709542}
   m_EdgeRadius: 0
---- !u!114 &1683262348
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4240119962210755106}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7b135e6b04b6d154ba330ea93484d4a7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Damage: 20
 --- !u!114 &1683262349
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -184,6 +171,19 @@ MonoBehaviour:
   maxHealth: 100
   flashLength: 0.5
   healthBar: {fileID: 6942701566573825509}
+--- !u!114 &1683262348
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4240119962210755106}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7b135e6b04b6d154ba330ea93484d4a7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Damage: 20
 --- !u!114 &1683262350
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -196,7 +196,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 322a6a27a2781eb4baa8d9e5842bb1b6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 1.5
+  speed: 5
   maxRange: 3
   minRange: 0.75
   homePos: {fileID: 0}
@@ -207,6 +207,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 4240119962210755105}
     m_Modifications:
+    - target: {fileID: 7735780757154992313, guid: f490b5bbeff5acd49a85aa5bd3924e69,
+        type: 3}
+      propertyPath: m_SortingLayerID
+      value: -278362447
+      objectReference: {fileID: 0}
     - target: {fileID: 7735780757154992314, guid: f490b5bbeff5acd49a85aa5bd3924e69,
         type: 3}
       propertyPath: m_Name

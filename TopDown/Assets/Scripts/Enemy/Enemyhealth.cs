@@ -16,10 +16,18 @@ public class Enemyhealth : MonoBehaviour
 
     public HealthBar healthBar;
 
+    public GameObject[] SpawnItems;
+    bool isDrop ;
+
+    public int CurrentHealth { get => currentHealth; set => currentHealth = value; }
+
+
+
+
     // Start is called before the first frame update
     void Start()
     {
-        currentHealth = maxHealth;
+        CurrentHealth = maxHealth;
         healthBar.SetMaxHealth(maxHealth);
         enemySprite = GetComponent<SpriteRenderer>();
     }
@@ -72,14 +80,29 @@ public class Enemyhealth : MonoBehaviour
         flashActive = true;
         flashCounter = flashLength;
 
-        currentHealth -= damage;
-        healthBar.SetHealth(currentHealth);
+        CurrentHealth -= damage;
+        healthBar.SetHealth(CurrentHealth);
 
 
-        if (currentHealth <= 0)
+        if (CurrentHealth <= 0)
         {
-            //gameObject.SetActive(false);
-            Destroy(gameObject);
+            //GameObject emty =  Instantiate(SpawnItems[Random.Range(0, SpawnItems.Length)], this.transform);
+            Dead();
+            Instantiate(SpawnItems[Random.Range(0, SpawnItems.Length)], gameObject.transform.position, Quaternion.identity);
+            //Destroy(gameObject);
+            //isDrop = true;
+            //Dead();
+
         }
     }
+    void Dead()
+    {
+        Destroy(gameObject);
+        //if (isDrop)
+        //{
+        //    Instantiate(SpawnItems[Random.Range(0, SpawnItems.Length)], this.transform);
+        //}
+    }
+
+
 }

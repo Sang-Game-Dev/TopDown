@@ -13,9 +13,9 @@ GameObject:
   - component: {fileID: 919956449217128236}
   - component: {fileID: 4609337495230282714}
   - component: {fileID: 2214232911662636810}
-  - component: {fileID: 546193576153746218}
   - component: {fileID: 3424491424820789051}
   - component: {fileID: 1487648471}
+  - component: {fileID: 546193576153746218}
   m_Layer: 0
   m_Name: Zombie_06
   m_TagString: Enemy
@@ -75,8 +75,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -278362447
+  m_SortingLayer: 2
   m_SortingOrder: 2
   m_Sprite: {fileID: -5125034019698823287, guid: 4cb1954b0c257854483f35b1f0d2f0c0,
     type: 3}
@@ -143,7 +143,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.014784694, y: -0.13568759}
+  m_Offset: {x: 0.014784694, y: -0.032218814}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -154,24 +154,8 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.7733015, y: 0.7550602}
+  m_Size: {x: 0.7733015, y: 0.96199775}
   m_EdgeRadius: 0
---- !u!114 &546193576153746218
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 919956449217128403}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 322a6a27a2781eb4baa8d9e5842bb1b6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 1.5
-  maxRange: 3
-  minRange: 0.75
-  homePos: {fileID: 0}
 --- !u!114 &3424491424820789051
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -200,6 +184,22 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Damage: 20
+--- !u!114 &546193576153746218
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 919956449217128403}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 322a6a27a2781eb4baa8d9e5842bb1b6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 5
+  maxRange: 3
+  minRange: 0.75
+  homePos: {fileID: 0}
 --- !u!1001 &7442320200088318383
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -207,6 +207,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 919956449217128238}
     m_Modifications:
+    - target: {fileID: 7735780757154992313, guid: f490b5bbeff5acd49a85aa5bd3924e69,
+        type: 3}
+      propertyPath: m_SortingLayerID
+      value: -278362447
+      objectReference: {fileID: 0}
     - target: {fileID: 7735780757154992314, guid: f490b5bbeff5acd49a85aa5bd3924e69,
         type: 3}
       propertyPath: m_Name
