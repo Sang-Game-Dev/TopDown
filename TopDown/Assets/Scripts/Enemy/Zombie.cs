@@ -11,14 +11,15 @@ public class Zombie : MonoBehaviour
     [SerializeField] float speed;
     [SerializeField] float maxRange;
     [SerializeField] float minRange;
-    KnockBack knockback;
 
     [Header("Public")]
     public Transform homePos;
 
+    public float Speed { get => speed; set => speed = value; }
+
     void Start()
     {
-        knockback = FindObjectOfType<KnockBack>();
+
         rb = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
         target = FindObjectOfType<PlayerController>().transform;
@@ -34,6 +35,7 @@ public class Zombie : MonoBehaviour
         }
         else if (Vector3.Distance(target.position, transform.position) >= maxRange)
         {
+
             GoHome();
         }
 
@@ -47,14 +49,15 @@ public class Zombie : MonoBehaviour
         animator.SetFloat("moveX", target.position.x - transform.position.x);
         animator.SetFloat("moveY", target.position.y - transform.position.y);
 
-        transform.position = Vector3.MoveTowards(transform.position, target.transform.position , speed * Time.deltaTime);
+        transform.position = Vector3.MoveTowards(transform.position, target.transform.position , Speed * Time.deltaTime);
     }
 
     public void GoHome()
     {
+        animator.SetBool("isMoving", true);
         animator.SetFloat("moveX", homePos.position.x - transform.position.x);
         animator.SetFloat("moveY", homePos.position.y - transform.position.y);
-        transform.position = Vector3.MoveTowards(transform.position, homePos.position, speed * Time.deltaTime);
+        transform.position = Vector3.MoveTowards(transform.position, homePos.position, Speed * Time.deltaTime);
 
         if (Vector3.Distance(transform.position, homePos.position) == 0)
             animator.SetBool("isMoving", false);

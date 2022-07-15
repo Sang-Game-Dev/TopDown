@@ -14,7 +14,9 @@ public class Skeleton : MonoBehaviour
 
 
     [Header("Public")]
-    public Transform homePos; 
+    public Transform homePos;
+
+    public float Speed { get => speed; set => speed = value; }
 
     void Start()
     {
@@ -46,27 +48,28 @@ public class Skeleton : MonoBehaviour
         animator.SetFloat("moveX", target.position.x-transform.position.x);
         animator.SetFloat("moveY", target.position.y-transform.position.y); 
         
-        transform.position = Vector3.MoveTowards(transform.position,target.transform.position,speed*Time.deltaTime);
+        transform.position = Vector3.MoveTowards(transform.position,target.transform.position,Speed*Time.deltaTime);
        
     }
 
     public void GoHome()
     {
+        animator.SetBool("isMoving", true);
         animator.SetFloat("moveX", homePos.position.x - transform.position.x);
         animator.SetFloat("moveY", homePos.position.y - transform.position.y);
-        transform.position = Vector3.MoveTowards(transform.position, homePos.position, speed * Time.deltaTime);
+        transform.position = Vector3.MoveTowards(transform.position, homePos.position, Speed * Time.deltaTime);
         
         if (Vector3.Distance(transform.position, homePos.position) == 0)
             animator.SetBool("isMoving", false);
     }
 
-    private void OnTriggerEnter2D(Collider2D other)
-    {
-        if (other.tag == "PlayerWeapon")
-        {
-            Vector2 difference = transform.position - other.transform.position;
-            transform.position = new Vector2(transform.position.x + difference.x, transform.position.y + difference.y);
-        }
-    }
+    //private void OnTriggerEnter2D(Collider2D other)
+    //{
+    //    if (other.tag == "PlayerWeapon")
+    //    {
+    //        Vector2 difference = transform.position - other.transform.position;
+    //        transform.position = new Vector2(transform.position.x + difference.x, transform.position.y + difference.y);
+    //    }
+    //}
 
 }
