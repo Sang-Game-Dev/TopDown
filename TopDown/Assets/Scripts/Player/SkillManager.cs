@@ -8,16 +8,14 @@ public class SkillManager : MonoBehaviour
     public GameObject BlueThunder;
     public GameObject SkillThree;
 
-
-    //Vector3 Pos;
-
     private void Start()
     {
-        //Pos = new Vector3(transform.position.x, transform.position.y, transform.position.z);
+       
     }
     private void Update()
     {
         AttackGoldThunder();
+        AttackBlueThunder();
     }
 
     public void AttackGoldThunder()
@@ -30,16 +28,15 @@ public class SkillManager : MonoBehaviour
 
         }
     }
-    //public void AttackBlueThunder()
-    //{
+    public void AttackBlueThunder()
+    {
 
-    //    if (Input.GetKeyDown(KeyCode.L))
-    //    {
+        if (Input.GetKeyDown(KeyCode.L))
+        {
+            StartCoroutine(InsBlueThunder());
 
-    //        StartCoroutine(InsBlueThunder());
-
-    //    }
-    //}
+        }
+    }
 
     IEnumerator InsGoldThunder()
     {
@@ -51,20 +48,20 @@ public class SkillManager : MonoBehaviour
             Destroy(Gold,0.5f);
         }
         
-        yield return new WaitForSeconds(0.5f);
-        //Destroy(Gold);
+        yield return new WaitForSeconds(0f);
+        
     }
-    //IEnumerator InsBlueThunder()
-    //{
-    //    Vector3 Pos = new Vector3(transform.position.x, transform.position.y, transform.position.z);
-    //    //GameObject GoldThunder = Instantiate(SkillOne,new Vector3( Pos.x - 1,Pos.y-1,0), Quaternion.identity);
-    //    for (int i = 0; i <= 4; i++)
-    //    {
-    //        GameObject Blue = Instantiate(BlueThunder, new Vector3(Pos.x - Random.Range(-1.5f, 1.5f), Pos.y - Random.Range(-1.5f, 1.5f), 0), Quaternion.identity);
-    //        Destroy(BlueThunder, 0.5f);
-    //    }
+    IEnumerator InsBlueThunder()
+    {
+        Vector3 Pos = new Vector3(transform.position.x, transform.position.y, transform.position.z);
+        //GameObject GoldThunder = Instantiate(SkillOne,new Vector3( Pos.x - 1,Pos.y-1,0), Quaternion.identity);
+        for (int i = 0; i <= 4; i++)
+        {
+            GameObject Blue = Instantiate(BlueThunder, new Vector3(Pos.x - Random.Range(-1.5f, 1.5f), Pos.y - Random.Range(-1.5f, 1.5f), 0), Quaternion.identity);
+            Destroy(Blue, 0.5f);
+        }
 
-    //    yield return new WaitForSeconds(0.5f);
-    //    //Destroy(GoldThunder);
-    //}
+        yield return new WaitForSeconds(0.5f);
+        //Destroy(GoldThunder);
+    }
 }

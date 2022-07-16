@@ -858,6 +858,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Zombie_03
       objectReference: {fileID: 0}
+    - target: {fileID: 4240119962210755106, guid: 62389f183cb54834381e81d84aaa4eb2,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7735780756650175533, guid: 62389f183cb54834381e81d84aaa4eb2,
         type: 3}
       propertyPath: m_AnchorMax.x
@@ -936,6 +941,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Zombie_04
+      objectReference: {fileID: 0}
+    - target: {fileID: 558651165896066159, guid: b0530a61eb1e86c4d8714a4af038a5a1,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6069548509037178368, guid: b0530a61eb1e86c4d8714a4af038a5a1,
         type: 3}
@@ -1036,6 +1046,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Zombie_06
       objectReference: {fileID: 0}
+    - target: {fileID: 919956449217128403, guid: 8975f1511deac834ab83d429f689755e,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8975f1511deac834ab83d429f689755e, type: 3}
 --- !u!1001 &4910530751550753019
@@ -1108,6 +1123,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Zombie_02
+      objectReference: {fileID: 0}
+    - target: {fileID: 7264262615390381138, guid: 1d9f393d7a9a2a74da5585a9276342f8,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7735780755952380403, guid: 1d9f393d7a9a2a74da5585a9276342f8,
         type: 3}
@@ -1192,6 +1212,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Zombie_05
       objectReference: {fileID: 0}
+    - target: {fileID: 6802474185218970230, guid: f58078dda4447a949afadd5dfab4afb8,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7735780755924588476, guid: f58078dda4447a949afadd5dfab4afb8,
         type: 3}
       propertyPath: m_AnchorMax.x
@@ -1274,6 +1299,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Skeleton
+      objectReference: {fileID: 0}
+    - target: {fileID: 7566522962608232631, guid: 778ffbc11154b1f4bb59523748945e24,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7735780756849458055, guid: 778ffbc11154b1f4bb59523748945e24,
         type: 3}
