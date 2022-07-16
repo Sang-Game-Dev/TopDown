@@ -123,6 +123,12 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &24064661 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 24064661, guid: a1f345b371b6d1343904591a7583ce28,
+    type: 3}
+  m_PrefabInstance: {fileID: 4422662801031114075}
+  m_PrefabAsset: {fileID: 0}
 --- !u!114 &44326448 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 7309428597366241430, guid: a84511a8337d02a43a8f36760bfd730d,
@@ -218,6 +224,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &409353863 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 409353863, guid: a1f345b371b6d1343904591a7583ce28,
+    type: 3}
+  m_PrefabInstance: {fileID: 4422662801031114075}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &595868314 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 595868314, guid: a1f345b371b6d1343904591a7583ce28,
+    type: 3}
+  m_PrefabInstance: {fileID: 4422662801031114075}
+  m_PrefabAsset: {fileID: 0}
 --- !u!114 &654472395 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 7309428597964313197, guid: a84511a8337d02a43a8f36760bfd730d,
@@ -242,6 +260,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &1337441699 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1337441699, guid: a1f345b371b6d1343904591a7583ce28,
+    type: 3}
+  m_PrefabInstance: {fileID: 4422662801031114075}
+  m_PrefabAsset: {fileID: 0}
 --- !u!114 &1728491574 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 2178993195087805564, guid: 83e8f71d612b500419ee49f30d5f8b2b,
@@ -254,6 +278,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cd1a9fee1a7281142961a94db73de345, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &1834799232 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1834799232, guid: a1f345b371b6d1343904591a7583ce28,
+    type: 3}
+  m_PrefabInstance: {fileID: 4422662801031114075}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1840001038
 GameObject:
   m_ObjectHideFlags: 0
@@ -320,6 +350,12 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1874944990 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1874944990, guid: a1f345b371b6d1343904591a7583ce28,
+    type: 3}
+  m_PrefabInstance: {fileID: 4422662801031114075}
+  m_PrefabAsset: {fileID: 0}
 --- !u!114 &1956168399 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 2178993195381018245, guid: 83e8f71d612b500419ee49f30d5f8b2b,
@@ -577,6 +613,36 @@ PrefabInstance:
       propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1728491574}
+    - target: {fileID: 2067786569197147610, guid: a1f345b371b6d1343904591a7583ce28,
+        type: 3}
+      propertyPath: Skill1
+      value: 
+      objectReference: {fileID: 1337441699}
+    - target: {fileID: 2067786569197147610, guid: a1f345b371b6d1343904591a7583ce28,
+        type: 3}
+      propertyPath: Skill2
+      value: 
+      objectReference: {fileID: 24064661}
+    - target: {fileID: 2067786569197147610, guid: a1f345b371b6d1343904591a7583ce28,
+        type: 3}
+      propertyPath: Skill3
+      value: 
+      objectReference: {fileID: 1874944990}
+    - target: {fileID: 2067786569197147610, guid: a1f345b371b6d1343904591a7583ce28,
+        type: 3}
+      propertyPath: textSkill1
+      value: 
+      objectReference: {fileID: 595868314}
+    - target: {fileID: 2067786569197147610, guid: a1f345b371b6d1343904591a7583ce28,
+        type: 3}
+      propertyPath: textSkill2
+      value: 
+      objectReference: {fileID: 409353863}
+    - target: {fileID: 2067786569197147610, guid: a1f345b371b6d1343904591a7583ce28,
+        type: 3}
+      propertyPath: textSkill3
+      value: 
+      objectReference: {fileID: 1834799232}
     - target: {fileID: 4422662800503497482, guid: a1f345b371b6d1343904591a7583ce28,
         type: 3}
       propertyPath: m_Pivot.x
