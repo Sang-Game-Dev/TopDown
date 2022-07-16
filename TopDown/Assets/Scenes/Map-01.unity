@@ -174,7 +174,7 @@ PrefabInstance:
     - target: {fileID: 6633577777053665054, guid: e293a96141db8f54880b4bb3cadda0d0,
         type: 3}
       propertyPath: m_RootOrder
-      value: 3
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 6633577777053665054, guid: e293a96141db8f54880b4bb3cadda0d0,
         type: 3}
@@ -20818,7 +20818,7 @@ PrefabInstance:
     - target: {fileID: 4046453703688977437, guid: f3a324bad48d3cc40889b27490680d96,
         type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 4046453703688977437, guid: f3a324bad48d3cc40889b27490680d96,
         type: 3}
@@ -29163,7 +29163,7 @@ PrefabInstance:
     - target: {fileID: 838836451012317725, guid: 0977f6eefece2cf4880217bee344cb91,
         type: 3}
       propertyPath: m_RootOrder
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 838836451012317725, guid: 0977f6eefece2cf4880217bee344cb91,
         type: 3}
@@ -29514,7 +29514,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 11
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2064874388
 GameObject:
@@ -29545,7 +29545,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &2064874390
 SpriteRenderer:
@@ -29605,39 +29605,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 1683262349, guid: 62389f183cb54834381e81d84aaa4eb2, type: 3}
-      propertyPath: maxHealth
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1683262349, guid: 62389f183cb54834381e81d84aaa4eb2, type: 3}
-      propertyPath: SpawnItems.Array.size
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 1683262349, guid: 62389f183cb54834381e81d84aaa4eb2, type: 3}
-      propertyPath: SpawnItems.Array.data[0]
-      value: 
-      objectReference: {fileID: 4961265036948539066, guid: 816e034c537d6d347ad39090483e9c83,
-        type: 3}
-    - target: {fileID: 1683262349, guid: 62389f183cb54834381e81d84aaa4eb2, type: 3}
-      propertyPath: SpawnItems.Array.data[1]
-      value: 
-      objectReference: {fileID: 4365125619363570649, guid: 8f013ab4d7866d14390575bd692169ab,
-        type: 3}
-    - target: {fileID: 1683262349, guid: 62389f183cb54834381e81d84aaa4eb2, type: 3}
-      propertyPath: SpawnItems.Array.data[2]
-      value: 
-      objectReference: {fileID: 1990381709461307983, guid: f631550133f171b49a41285feafe1096,
-        type: 3}
-    - target: {fileID: 1683262349, guid: 62389f183cb54834381e81d84aaa4eb2, type: 3}
-      propertyPath: SpawnItems.Array.data[3]
-      value: 
-      objectReference: {fileID: 7848827802203184804, guid: 6d904689a98f3bc49a08b2c322c2153d,
-        type: 3}
-    - target: {fileID: 1683262349, guid: 62389f183cb54834381e81d84aaa4eb2, type: 3}
-      propertyPath: SpawnItems.Array.data[4]
-      value: 
-      objectReference: {fileID: 425894892812897191, guid: acd7e96aa9c1169489c48816777183e2,
-        type: 3}
     - target: {fileID: 1683262350, guid: 62389f183cb54834381e81d84aaa4eb2, type: 3}
       propertyPath: homePos
       value: 
@@ -29645,7 +29612,7 @@ PrefabInstance:
     - target: {fileID: 4240119962210755105, guid: 62389f183cb54834381e81d84aaa4eb2,
         type: 3}
       propertyPath: m_RootOrder
-      value: 7
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 4240119962210755105, guid: 62389f183cb54834381e81d84aaa4eb2,
         type: 3}
@@ -29702,11 +29669,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Zombie_03
       objectReference: {fileID: 0}
-    - target: {fileID: 4240119962210755106, guid: 62389f183cb54834381e81d84aaa4eb2,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 7735780756650175533, guid: 62389f183cb54834381e81d84aaa4eb2,
         type: 3}
       propertyPath: m_AnchorMax.x
@@ -29729,7 +29691,7 @@ PrefabInstance:
     - target: {fileID: 558651165896066156, guid: b0530a61eb1e86c4d8714a4af038a5a1,
         type: 3}
       propertyPath: m_RootOrder
-      value: 8
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 558651165896066156, guid: b0530a61eb1e86c4d8714a4af038a5a1,
         type: 3}
@@ -29786,51 +29748,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Zombie_04
       objectReference: {fileID: 0}
-    - target: {fileID: 558651165896066159, guid: b0530a61eb1e86c4d8714a4af038a5a1,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 935976667097061947, guid: b0530a61eb1e86c4d8714a4af038a5a1,
-        type: 3}
-      propertyPath: maxHealth
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 935976667097061947, guid: b0530a61eb1e86c4d8714a4af038a5a1,
-        type: 3}
-      propertyPath: SpawnItems.Array.size
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 935976667097061947, guid: b0530a61eb1e86c4d8714a4af038a5a1,
-        type: 3}
-      propertyPath: SpawnItems.Array.data[0]
-      value: 
-      objectReference: {fileID: 4961265036948539066, guid: 816e034c537d6d347ad39090483e9c83,
-        type: 3}
-    - target: {fileID: 935976667097061947, guid: b0530a61eb1e86c4d8714a4af038a5a1,
-        type: 3}
-      propertyPath: SpawnItems.Array.data[1]
-      value: 
-      objectReference: {fileID: 4365125619363570649, guid: 8f013ab4d7866d14390575bd692169ab,
-        type: 3}
-    - target: {fileID: 935976667097061947, guid: b0530a61eb1e86c4d8714a4af038a5a1,
-        type: 3}
-      propertyPath: SpawnItems.Array.data[2]
-      value: 
-      objectReference: {fileID: 1990381709461307983, guid: f631550133f171b49a41285feafe1096,
-        type: 3}
-    - target: {fileID: 935976667097061947, guid: b0530a61eb1e86c4d8714a4af038a5a1,
-        type: 3}
-      propertyPath: SpawnItems.Array.data[3]
-      value: 
-      objectReference: {fileID: 7848827802203184804, guid: 6d904689a98f3bc49a08b2c322c2153d,
-        type: 3}
-    - target: {fileID: 935976667097061947, guid: b0530a61eb1e86c4d8714a4af038a5a1,
-        type: 3}
-      propertyPath: SpawnItems.Array.data[4]
-      value: 
-      objectReference: {fileID: 425894892812897191, guid: acd7e96aa9c1169489c48816777183e2,
-        type: 3}
     - target: {fileID: 6069548509037178368, guid: b0530a61eb1e86c4d8714a4af038a5a1,
         type: 3}
       propertyPath: homePos
@@ -29873,7 +29790,7 @@ PrefabInstance:
     - target: {fileID: 919956449217128238, guid: 8975f1511deac834ab83d429f689755e,
         type: 3}
       propertyPath: m_RootOrder
-      value: 10
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 919956449217128238, guid: 8975f1511deac834ab83d429f689755e,
         type: 3}
@@ -29930,51 +29847,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Zombie_06
       objectReference: {fileID: 0}
-    - target: {fileID: 919956449217128403, guid: 8975f1511deac834ab83d429f689755e,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3424491424820789051, guid: 8975f1511deac834ab83d429f689755e,
-        type: 3}
-      propertyPath: maxHealth
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3424491424820789051, guid: 8975f1511deac834ab83d429f689755e,
-        type: 3}
-      propertyPath: SpawnItems.Array.size
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 3424491424820789051, guid: 8975f1511deac834ab83d429f689755e,
-        type: 3}
-      propertyPath: SpawnItems.Array.data[0]
-      value: 
-      objectReference: {fileID: 4961265036948539066, guid: 816e034c537d6d347ad39090483e9c83,
-        type: 3}
-    - target: {fileID: 3424491424820789051, guid: 8975f1511deac834ab83d429f689755e,
-        type: 3}
-      propertyPath: SpawnItems.Array.data[1]
-      value: 
-      objectReference: {fileID: 4365125619363570649, guid: 8f013ab4d7866d14390575bd692169ab,
-        type: 3}
-    - target: {fileID: 3424491424820789051, guid: 8975f1511deac834ab83d429f689755e,
-        type: 3}
-      propertyPath: SpawnItems.Array.data[2]
-      value: 
-      objectReference: {fileID: 1990381709461307983, guid: f631550133f171b49a41285feafe1096,
-        type: 3}
-    - target: {fileID: 3424491424820789051, guid: 8975f1511deac834ab83d429f689755e,
-        type: 3}
-      propertyPath: SpawnItems.Array.data[3]
-      value: 
-      objectReference: {fileID: 7848827802203184804, guid: 6d904689a98f3bc49a08b2c322c2153d,
-        type: 3}
-    - target: {fileID: 3424491424820789051, guid: 8975f1511deac834ab83d429f689755e,
-        type: 3}
-      propertyPath: SpawnItems.Array.data[4]
-      value: 
-      objectReference: {fileID: 425894892812897191, guid: acd7e96aa9c1169489c48816777183e2,
-        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8975f1511deac834ab83d429f689755e, type: 3}
 --- !u!1001 &4910530751550753019
@@ -29988,43 +29860,10 @@ PrefabInstance:
       propertyPath: homePos
       value: 
       objectReference: {fileID: 2064874389}
-    - target: {fileID: 2020480647, guid: 1d9f393d7a9a2a74da5585a9276342f8, type: 3}
-      propertyPath: maxHealth
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2020480647, guid: 1d9f393d7a9a2a74da5585a9276342f8, type: 3}
-      propertyPath: SpawnItems.Array.size
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 2020480647, guid: 1d9f393d7a9a2a74da5585a9276342f8, type: 3}
-      propertyPath: SpawnItems.Array.data[0]
-      value: 
-      objectReference: {fileID: 4961265036948539066, guid: 816e034c537d6d347ad39090483e9c83,
-        type: 3}
-    - target: {fileID: 2020480647, guid: 1d9f393d7a9a2a74da5585a9276342f8, type: 3}
-      propertyPath: SpawnItems.Array.data[1]
-      value: 
-      objectReference: {fileID: 4365125619363570649, guid: 8f013ab4d7866d14390575bd692169ab,
-        type: 3}
-    - target: {fileID: 2020480647, guid: 1d9f393d7a9a2a74da5585a9276342f8, type: 3}
-      propertyPath: SpawnItems.Array.data[2]
-      value: 
-      objectReference: {fileID: 1990381709461307983, guid: f631550133f171b49a41285feafe1096,
-        type: 3}
-    - target: {fileID: 2020480647, guid: 1d9f393d7a9a2a74da5585a9276342f8, type: 3}
-      propertyPath: SpawnItems.Array.data[3]
-      value: 
-      objectReference: {fileID: 7848827802203184804, guid: 6d904689a98f3bc49a08b2c322c2153d,
-        type: 3}
-    - target: {fileID: 2020480647, guid: 1d9f393d7a9a2a74da5585a9276342f8, type: 3}
-      propertyPath: SpawnItems.Array.data[4]
-      value: 
-      objectReference: {fileID: 425894892812897191, guid: acd7e96aa9c1169489c48816777183e2,
-        type: 3}
     - target: {fileID: 7264262615390381137, guid: 1d9f393d7a9a2a74da5585a9276342f8,
         type: 3}
       propertyPath: m_RootOrder
-      value: 6
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 7264262615390381137, guid: 1d9f393d7a9a2a74da5585a9276342f8,
         type: 3}
@@ -30081,11 +29920,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Zombie_02
       objectReference: {fileID: 0}
-    - target: {fileID: 7264262615390381138, guid: 1d9f393d7a9a2a74da5585a9276342f8,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 7735780755952380403, guid: 1d9f393d7a9a2a74da5585a9276342f8,
         type: 3}
       propertyPath: m_AnchorMax.x
@@ -30105,39 +29939,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 1809965939, guid: f58078dda4447a949afadd5dfab4afb8, type: 3}
-      propertyPath: maxHealth
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1809965939, guid: f58078dda4447a949afadd5dfab4afb8, type: 3}
-      propertyPath: SpawnItems.Array.size
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 1809965939, guid: f58078dda4447a949afadd5dfab4afb8, type: 3}
-      propertyPath: SpawnItems.Array.data[0]
-      value: 
-      objectReference: {fileID: 4961265036948539066, guid: 816e034c537d6d347ad39090483e9c83,
-        type: 3}
-    - target: {fileID: 1809965939, guid: f58078dda4447a949afadd5dfab4afb8, type: 3}
-      propertyPath: SpawnItems.Array.data[1]
-      value: 
-      objectReference: {fileID: 4365125619363570649, guid: 8f013ab4d7866d14390575bd692169ab,
-        type: 3}
-    - target: {fileID: 1809965939, guid: f58078dda4447a949afadd5dfab4afb8, type: 3}
-      propertyPath: SpawnItems.Array.data[2]
-      value: 
-      objectReference: {fileID: 1990381709461307983, guid: f631550133f171b49a41285feafe1096,
-        type: 3}
-    - target: {fileID: 1809965939, guid: f58078dda4447a949afadd5dfab4afb8, type: 3}
-      propertyPath: SpawnItems.Array.data[3]
-      value: 
-      objectReference: {fileID: 7848827802203184804, guid: 6d904689a98f3bc49a08b2c322c2153d,
-        type: 3}
-    - target: {fileID: 1809965939, guid: f58078dda4447a949afadd5dfab4afb8, type: 3}
-      propertyPath: SpawnItems.Array.data[4]
-      value: 
-      objectReference: {fileID: 425894892812897191, guid: acd7e96aa9c1169489c48816777183e2,
-        type: 3}
     - target: {fileID: 1809965940, guid: f58078dda4447a949afadd5dfab4afb8, type: 3}
       propertyPath: homePos
       value: 
@@ -30145,17 +29946,17 @@ PrefabInstance:
     - target: {fileID: 6802474185218970229, guid: f58078dda4447a949afadd5dfab4afb8,
         type: 3}
       propertyPath: m_RootOrder
-      value: 9
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 6802474185218970229, guid: f58078dda4447a949afadd5dfab4afb8,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -23.68
+      value: 1.71
       objectReference: {fileID: 0}
     - target: {fileID: 6802474185218970229, guid: f58078dda4447a949afadd5dfab4afb8,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 6.17
+      value: 2.78
       objectReference: {fileID: 0}
     - target: {fileID: 6802474185218970229, guid: f58078dda4447a949afadd5dfab4afb8,
         type: 3}
@@ -30202,11 +30003,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Zombie_05
       objectReference: {fileID: 0}
-    - target: {fileID: 6802474185218970230, guid: f58078dda4447a949afadd5dfab4afb8,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 7735780755924588476, guid: f58078dda4447a949afadd5dfab4afb8,
         type: 3}
       propertyPath: m_AnchorMax.x
@@ -30230,43 +30026,10 @@ PrefabInstance:
       propertyPath: homePos
       value: 
       objectReference: {fileID: 2064874389}
-    - target: {fileID: 816784723, guid: 778ffbc11154b1f4bb59523748945e24, type: 3}
-      propertyPath: maxHealth
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 816784723, guid: 778ffbc11154b1f4bb59523748945e24, type: 3}
-      propertyPath: SpawnItems.Array.size
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 816784723, guid: 778ffbc11154b1f4bb59523748945e24, type: 3}
-      propertyPath: SpawnItems.Array.data[0]
-      value: 
-      objectReference: {fileID: 4961265036948539066, guid: 816e034c537d6d347ad39090483e9c83,
-        type: 3}
-    - target: {fileID: 816784723, guid: 778ffbc11154b1f4bb59523748945e24, type: 3}
-      propertyPath: SpawnItems.Array.data[1]
-      value: 
-      objectReference: {fileID: 4365125619363570649, guid: 8f013ab4d7866d14390575bd692169ab,
-        type: 3}
-    - target: {fileID: 816784723, guid: 778ffbc11154b1f4bb59523748945e24, type: 3}
-      propertyPath: SpawnItems.Array.data[2]
-      value: 
-      objectReference: {fileID: 1990381709461307983, guid: f631550133f171b49a41285feafe1096,
-        type: 3}
-    - target: {fileID: 816784723, guid: 778ffbc11154b1f4bb59523748945e24, type: 3}
-      propertyPath: SpawnItems.Array.data[3]
-      value: 
-      objectReference: {fileID: 7848827802203184804, guid: 6d904689a98f3bc49a08b2c322c2153d,
-        type: 3}
-    - target: {fileID: 816784723, guid: 778ffbc11154b1f4bb59523748945e24, type: 3}
-      propertyPath: SpawnItems.Array.data[4]
-      value: 
-      objectReference: {fileID: 425894892812897191, guid: acd7e96aa9c1169489c48816777183e2,
-        type: 3}
     - target: {fileID: 7566522962608232624, guid: 778ffbc11154b1f4bb59523748945e24,
         type: 3}
       propertyPath: m_RootOrder
-      value: 5
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 7566522962608232624, guid: 778ffbc11154b1f4bb59523748945e24,
         type: 3}
@@ -30322,11 +30085,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Skeleton
-      objectReference: {fileID: 0}
-    - target: {fileID: 7566522962608232631, guid: 778ffbc11154b1f4bb59523748945e24,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7735780756849458055, guid: 778ffbc11154b1f4bb59523748945e24,
         type: 3}
