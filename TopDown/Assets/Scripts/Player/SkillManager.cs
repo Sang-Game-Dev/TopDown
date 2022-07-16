@@ -48,11 +48,11 @@ public class SkillManager : MonoBehaviour
         for(int i =0; i<=4; i++)
         {
             GameObject Gold = Instantiate(GoldThunder, new Vector3(Pos.x - Random.Range(-1.5f,1.5f), Pos.y - Random.Range(-1.5f, 1.5f), 0), Quaternion.identity);
-            Destroy(GoldThunder,0.5f);
+            Destroy(Gold,0.5f);
         }
         
         yield return new WaitForSeconds(0.5f);
-        //Destroy(GoldThunder);
+        //Destroy(Gold);
     }
     //IEnumerator InsBlueThunder()
     //{
