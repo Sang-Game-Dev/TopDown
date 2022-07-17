@@ -88,7 +88,7 @@ GameObject:
   - component: {fileID: 7566522962608232626}
   - component: {fileID: 816784723}
   - component: {fileID: 240451739}
-  - component: {fileID: 816784722}
+  - component: {fileID: 763655332}
   m_Layer: 0
   m_Name: Skeleton
   m_TagString: Enemy
@@ -174,7 +174,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0.07122803, y: -0.17029142}
@@ -258,7 +258,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: de8a2332e3724d844b476c00db8ac129, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHealth: 1
+  maxHealth: 150
   flashLength: 0.5
   healthBar: {fileID: 6942701564760005199}
   SpawnItems:
@@ -280,7 +280,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Damage: 30
---- !u!114 &816784722
+--- !u!114 &763655332
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -289,12 +289,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 7566522962608232631}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 662a5825529295246b735e8246c6a4de, type: 3}
+  m_Script: {fileID: 11500000, guid: 322a6a27a2781eb4baa8d9e5842bb1b6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 5
+  speed: 3
   maxRange: 3
-  minRange: 0.75
+  minRange: 1
   homePos: {fileID: 0}
 --- !u!1001 &1000225377
 PrefabInstance:

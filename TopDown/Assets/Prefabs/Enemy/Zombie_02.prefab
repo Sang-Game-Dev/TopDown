@@ -241,7 +241,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: de8a2332e3724d844b476c00db8ac129, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHealth: 1
+  maxHealth: 100
   flashLength: 0.5
   healthBar: {fileID: 6942701566278879291}
   SpawnItems:
@@ -275,8 +275,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 322a6a27a2781eb4baa8d9e5842bb1b6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 5
-  maxRange: 3
+  speed: 3
+  maxRange: 3.5
   minRange: 0.75
   homePos: {fileID: 0}
 --- !u!1001 &1628858389

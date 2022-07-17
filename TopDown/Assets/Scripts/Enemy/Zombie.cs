@@ -44,20 +44,22 @@ public class Zombie : MonoBehaviour
 
     public void FollowPlayer()
     {
+
         animator.SetBool("isMoving", true);
         animator.SetFloat("moveX", target.position.x - transform.position.x);
         animator.SetFloat("moveY", target.position.y - transform.position.y);
         transform.position = Vector3.MoveTowards(transform.position, target.transform.position , Speed * Time.deltaTime);
-        //transform.position = new Vector3(transform.position.x, transform.position.y, 0);
+       
     }
 
     public void GoHome()
     {
+        
         animator.SetBool("isMoving", true);
         animator.SetFloat("moveX", homePos.position.x - transform.position.x);
         animator.SetFloat("moveY", homePos.position.y - transform.position.y);
         transform.position = Vector3.MoveTowards(transform.position, homePos.position, Speed * Time.deltaTime);
-        //transform.position = new Vector3(transform.position.x, transform.position.y, 0);
+       
         if (Vector3.Distance(transform.position, homePos.position) == 0)
             animator.SetBool("isMoving", false);
     }
