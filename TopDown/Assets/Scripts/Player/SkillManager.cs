@@ -10,6 +10,8 @@ public class SkillManager : MonoBehaviour
     public GameObject BlueThunder;
     public GameObject SkillThree;
 
+    public GameObject Pos;
+
     [Header("Mp from skills")]
 
     [SerializeField] float blueThunderMp;
@@ -36,8 +38,6 @@ public class SkillManager : MonoBehaviour
         {
 
             StartCoroutine(InsGoldThunder());
-            //MP.DecreasingMp();
-
         }
     }
     public void AttackBlueThunder()
@@ -58,29 +58,15 @@ public class SkillManager : MonoBehaviour
 
     IEnumerator InsGoldThunder()
     {
-        Vector3 Pos = new Vector3(transform.position.x, transform.position.y, transform.position.z);
-         //GameObject GoldThunder = Instantiate(SkillOne,new Vector3( Pos.x - 1,Pos.y-1,0), Quaternion.identity);
-        for(int i =0; i<=4; i++)
-        {
-            GameObject Gold = Instantiate(GoldThunder, new Vector3(Pos.x - Random.Range(-1.5f,1.5f), Pos.y - Random.Range(-1.5f, 1.5f), 0), Quaternion.identity);
-            Destroy(Gold,0.5f);
-        }
-        
-        yield return new WaitForSeconds(0f);
-        
+        GameObject Gold = Instantiate(GoldThunder,Pos.transform.position,Quaternion.identity);
+        yield return new WaitForSeconds(1f);
+        Destroy(Gold);
     }
     IEnumerator InsBlueThunder()
     {
-        Vector3 Pos = new Vector3(transform.position.x, transform.position.y, transform.position.z);
-        //GameObject GoldThunder = Instantiate(SkillOne,new Vector3( Pos.x - 1,Pos.y-1,0), Quaternion.identity);
-        for (int i = 0; i <= 4; i++)
-        {
-            GameObject Blue = Instantiate(BlueThunder, new Vector3(Pos.x - Random.Range(-1.5f, 1.5f), Pos.y - Random.Range(-1.5f, 1.5f), 0), Quaternion.identity);
-            Destroy(Blue, 0.5f);
-        }
-
-        yield return new WaitForSeconds(0.5f);
-        //Destroy(GoldThunder);
+        GameObject Blue = Instantiate(BlueThunder, Pos.transform.position, Quaternion.identity);
+        yield return new WaitForSeconds(1f);
+        Destroy(Blue);
     }
 
 
