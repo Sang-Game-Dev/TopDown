@@ -6,6 +6,11 @@ TagManager:
   tags:
   - Enemy
   - PlayerWeapon
+  - Coin
+  - HP
+  - MP
+  - minHP
+  - Slime
   layers:
   - Default
   - TransparentFX

@@ -3,10 +3,14 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class HealthManager : MonoBehaviour
-{   
+{   [Header("Set up HP")]
+
+
     private int currentHealth;
     [SerializeField] int maxHealth;
+   
 
+    [Header("Flash")]
     [SerializeField] 
     private float flashLength = 0f;
     private float flashCounter = 0f;
@@ -14,13 +18,19 @@ public class HealthManager : MonoBehaviour
 
     private bool flashActive;
 
-    public HealthBar healthBar;
+    [Header("Slider bar")]
+
+    public HealthBar HP;
+   
+   
 
 
     void Start()
     {
         currentHealth = maxHealth;
-        healthBar.SetMaxHealth(maxHealth);
+        HP.SetMaxHealth(maxHealth);
+
+        
         playerSprite = GetComponent<SpriteRenderer>();
         
     }
@@ -74,7 +84,7 @@ public class HealthManager : MonoBehaviour
         flashCounter = flashLength;
 
         currentHealth -= damage;
-        healthBar.SetHealth(currentHealth);
+        HP.SetHealth(currentHealth);
         
 
         if(currentHealth <= 0)
@@ -83,5 +93,6 @@ public class HealthManager : MonoBehaviour
         }
     }
     
+
 
 }

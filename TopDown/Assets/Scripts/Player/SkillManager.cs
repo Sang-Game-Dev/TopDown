@@ -4,13 +4,24 @@ using UnityEngine;
 
 public class SkillManager : MonoBehaviour
 {
+    [Header("Skills")]
+
     public GameObject GoldThunder;
     public GameObject BlueThunder;
     public GameObject SkillThree;
 
+    [Header("Mp from skills")]
+
+    [SerializeField] float blueThunderMp;
+    [SerializeField] float goldThunderMp;
+    [SerializeField] float tornadoThunderMp;
+
+    ManaManager MP;
+
+    
     private void Start()
     {
-       
+        MP = GetComponent<ManaManager>();
     }
     private void Update()
     {
@@ -25,6 +36,7 @@ public class SkillManager : MonoBehaviour
         {
 
             StartCoroutine(InsGoldThunder());
+            //MP.DecreasingMp();
 
         }
     }
@@ -36,6 +48,12 @@ public class SkillManager : MonoBehaviour
             StartCoroutine(InsBlueThunder());
 
         }
+    }
+
+
+    public void AttackTornado()
+    {
+
     }
 
     IEnumerator InsGoldThunder()
@@ -63,5 +81,12 @@ public class SkillManager : MonoBehaviour
 
         yield return new WaitForSeconds(0.5f);
         //Destroy(GoldThunder);
+    }
+
+
+
+    void SetMP()
+    {
+        
     }
 }

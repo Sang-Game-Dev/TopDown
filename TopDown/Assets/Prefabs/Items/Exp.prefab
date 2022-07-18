@@ -82,9 +82,10 @@ GameObject:
   m_Component:
   - component: {fileID: 7848827802203184802}
   - component: {fileID: 7848827802203184803}
+  - component: {fileID: 7914020143895729122}
   m_Layer: 0
   m_Name: Exp
-  m_TagString: Untagged
+  m_TagString: minHP
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -155,3 +156,19 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!58 &7914020143895729122
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7848827802203184804}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.009745777, y: 0}
+  serializedVersion: 2
+  m_Radius: 0.26693976
