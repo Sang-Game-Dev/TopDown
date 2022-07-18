@@ -2045,6 +2045,7 @@ GameObject:
   - component: {fileID: 4422662800503497493}
   - component: {fileID: 563301966}
   - component: {fileID: 2067786569197147610}
+  - component: {fileID: 4422662801031114079}
   m_Layer: 5
   m_Name: -----PlayGame-----
   m_TagString: Untagged
@@ -2165,6 +2166,27 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f5c85632a1935664c84c25babdb9210c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  textSkill1: {fileID: 595868314}
+  textSkill2: {fileID: 409353863}
+  textSkill3: {fileID: 1834799232}
+  Skill1: {fileID: 1337441699}
+  Skill2: {fileID: 24064661}
+  Skill3: {fileID: 1874944990}
+--- !u!114 &4422662801031114079
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4422662800503497494}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f3dc61b3f14eee541a0e43e7bc6561a5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  countDownTime: {fileID: 4422662801107167534}
+  countScull: {fileID: 4422662801603351822}
+  timer: 10
 --- !u!1 &4422662800654743279
 GameObject:
   m_ObjectHideFlags: 0
@@ -3270,7 +3292,7 @@ GameObject:
   - component: {fileID: 4422662801603351821}
   - component: {fileID: 4422662801603351822}
   m_Layer: 5
-  m_Name: Text
+  m_Name: TextScull
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
