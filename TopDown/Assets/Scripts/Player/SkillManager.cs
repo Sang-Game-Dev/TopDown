@@ -53,26 +53,27 @@ public class SkillManager : MonoBehaviour
 
     public void AttackTornado()
     {
-
+        Debug.Log("Skill 3");
     }
 
     IEnumerator InsGoldThunder()
     {
         GameObject Gold = Instantiate(GoldThunder,Pos.transform.position,Quaternion.identity);
-        yield return new WaitForSeconds(1f);
+        yield return new WaitForSeconds(0.5f);
         Destroy(Gold);
     }
     IEnumerator InsBlueThunder()
     {
         GameObject Blue = Instantiate(BlueThunder, Pos.transform.position, Quaternion.identity);
-        yield return new WaitForSeconds(1f);
+        yield return new WaitForSeconds(0.5f);
         Destroy(Blue);
     }
 
 
 
-    void SetMP()
+    IEnumerator InsTornado()
     {
-        
-    }
+        yield return new WaitForSeconds(1f);
+
+    }  
 }
