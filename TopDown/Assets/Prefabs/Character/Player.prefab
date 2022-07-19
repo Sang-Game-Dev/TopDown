@@ -2277,7 +2277,7 @@ MonoBehaviour:
     type: 3}
   Pos: {fileID: 344751331}
   blueThunderMp: 100
-  goldThunderMp: 1000
+  goldThunderMp: 150
   tornadoThunderMp: 100
   coolDownBlueThunder: 5
   coolDownGoldThunder: 5
@@ -2294,7 +2294,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4c148502c7a9f8d418b1060dd30106e5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  mana: {fileID: 0}
   maxMana: 1000
-  MP: {fileID: 0}
   Upstamina: 100
   popUpMP: {fileID: 249009438545698684, guid: 1cbc2581edc874e4eae645e15d7a6f59, type: 3}
