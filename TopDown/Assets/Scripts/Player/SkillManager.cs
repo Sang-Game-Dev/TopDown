@@ -45,6 +45,7 @@ public class SkillManager : MonoBehaviour
     private void Start()
     {
         MP = GetComponent<ManaManager>();
+        
     }
     private void Update()
     {

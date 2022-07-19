@@ -6370,6 +6370,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: -----PlayGame-----
       objectReference: {fileID: 0}
+    - target: {fileID: 4422662800689976694, guid: a1f345b371b6d1343904591a7583ce28,
+        type: 3}
+      propertyPath: m_Value
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4422662800855650883, guid: a1f345b371b6d1343904591a7583ce28,
         type: 3}
       propertyPath: m_AnchorMax.x
