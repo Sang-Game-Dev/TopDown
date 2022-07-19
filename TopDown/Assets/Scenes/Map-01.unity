@@ -6241,42 +6241,10 @@ PrefabInstance:
       propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1514318029}
-    - target: {fileID: 253268391, guid: a1f345b371b6d1343904591a7583ce28, type: 3}
-      propertyPath: m_AnchorMax.y
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 365487043, guid: a1f345b371b6d1343904591a7583ce28, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 969437758, guid: a1f345b371b6d1343904591a7583ce28, type: 3}
-      propertyPath: m_AnchorMax.y
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1164641201, guid: a1f345b371b6d1343904591a7583ce28, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 1164641201, guid: a1f345b371b6d1343904591a7583ce28, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: Home
-      objectReference: {fileID: 0}
-    - target: {fileID: 1164641201, guid: a1f345b371b6d1343904591a7583ce28, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_StringArgument
-      value: StartGame
-      objectReference: {fileID: 0}
-    - target: {fileID: 1395798254, guid: a1f345b371b6d1343904591a7583ce28, type: 3}
-      propertyPath: m_AnchorMax.y
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 1873733124, guid: a1f345b371b6d1343904591a7583ce28, type: 3}
       propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1813915885}
-    - target: {fileID: 2014667914, guid: a1f345b371b6d1343904591a7583ce28, type: 3}
-      propertyPath: m_AnchorMax.y
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 2067786569197147610, guid: a1f345b371b6d1343904591a7583ce28,
         type: 3}
       propertyPath: player
