@@ -7,11 +7,12 @@ public class CoolDownSkilll : MonoBehaviour
 {
     // Start is called before the first frame update
     //[SerializeField] RougeController player;
-    [SerializeField] GameObject textSkill1;
-    [SerializeField] GameObject textSkill2;
+    [SerializeField] SkillManager player;
+    [SerializeField] GameObject textBlue;
+    [SerializeField] GameObject textGold;
     [SerializeField] GameObject textSkill3;
-    [SerializeField] GameObject Skill1;
-    [SerializeField] GameObject Skill2;
+    [SerializeField] GameObject SkillBlue;
+    [SerializeField] GameObject SkillGold;
     [SerializeField] GameObject Skill3;
     float timerSkill1;
     float timerSkill2;
@@ -24,44 +25,14 @@ public class CoolDownSkilll : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        //Test();
-    }
+        CoolDownSkillBlueThunder();
+        CoolDownSkillGoldThunder();
 
-    //void CoolDownUI()
+    }
+    //void SkillUI()
     //{
-    //    if (player.IscoolDownExtraAttack == false)
-    //    {
-    //        textExtra.SetActive(true);
-    //        extraSkill.SetActive(true);
-    //        player.TimerExtra -= 1 * Time.deltaTime;
-    //        textExtra.GetComponent<Text>().text = player.TimerExtra.ToString("0.0");
-    //        extraSkill.GetComponent<Image>().fillAmount = player.TimerExtra / player.CoolDownExtraAttack1;
-    //        if (player.TimerExtra <= 0)
-    //        {
-    //            textExtra.SetActive(false);
-    //            extraSkill.SetActive(false);
-    //        }
-    //    }
-    //    if (player.IscoolDownMagicAttack == false)
-    //    {
-    //        magicSkill.SetActive(true);
-    //        textMagic.SetActive(true);
-    //        player.TimerMagic -= 1 * Time.deltaTime;
-    //        textMagic.GetComponent<Text>().text = player.TimerMagic.ToString("0.0");
-    //        magicSkill.GetComponent<Image>().fillAmount = player.TimerMagic / player.CoolDownMagicAttack1;
-    //        if (player.TimerMagic <= 0)
-    //        {
-    //            textMagic.SetActive(false);
-    //            magicSkill.SetActive(false);
-    //        }
-    //    }
+    //    CoolDown(player.IsCoolDownBlueThunder,player.TimerBlueThunder,player.CoolDownBlueThunder, textSkill1,Skill1);
     //}
-
-    void Test()
-    {
-        //if(Input.GetKeyDown(KeyCode.K))
-        CoolDown(false, 10f, 12f, textSkill1, Skill1);
-    }
 
     void CoolDown(bool SkillCoolDown, float TimerSkill,float TimerCoolDownSkillPlayer,GameObject Text, GameObject Skill)
     {
@@ -76,6 +47,40 @@ public class CoolDownSkilll : MonoBehaviour
             {
                 Text.SetActive(false);
                 Skill.SetActive(false);
+            }
+        }
+    }
+
+    void CoolDownSkillBlueThunder()
+    {
+        if (player.IsCoolDownBlueThunder == false)
+        {
+            textBlue.SetActive(true);
+            SkillBlue.SetActive(true);
+            player.TimerBlueThunder -= 1 * Time.deltaTime;
+            textBlue.GetComponent<Text>().text = player.TimerBlueThunder.ToString("0.0");
+            SkillBlue.GetComponent<Image>().fillAmount = player.TimerBlueThunder / player.CoolDownBlueThunder;
+            if (player.TimerBlueThunder <= 0)
+            {
+                textBlue.SetActive(false);
+                SkillBlue.SetActive(false);
+            }
+        }
+    }
+
+    void CoolDownSkillGoldThunder()
+    {
+        if (player.IsCoolDownGoldThunder == false)
+        {
+            textGold.SetActive(true);
+            SkillGold.SetActive(true);
+            player.TimerGoldThunder -= 1 * Time.deltaTime;
+            textGold.GetComponent<Text>().text = player.TimerGoldThunder.ToString("0.0");
+            SkillGold.GetComponent<Image>().fillAmount = player.TimerGoldThunder / player.CoolDownGoldThunder;
+            if (player.TimerGoldThunder <= 0)
+            {
+                textGold.SetActive(false);
+                SkillGold.SetActive(false);
             }
         }
     }

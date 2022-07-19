@@ -11,8 +11,10 @@ public class Enemyhealth : MonoBehaviour
     private float flashLength = 0f;
     private float flashCounter = 0f;
     private SpriteRenderer enemySprite;
+    [SerializeField] GameObject popupDame;
 
     private bool flashActive;
+    private Transform PositionObject;
 
     public HealthBar healthBar;
 
@@ -30,6 +32,7 @@ public class Enemyhealth : MonoBehaviour
         CurrentHealth = maxHealth;
         healthBar.SetMaxHealth(maxHealth);
         enemySprite = GetComponent<SpriteRenderer>();
+        PositionObject = GetComponent<Transform>();
     }
 
     // Update is called once per frame
@@ -82,6 +85,7 @@ public class Enemyhealth : MonoBehaviour
 
         CurrentHealth -= damage;
         healthBar.SetHealth(CurrentHealth);
+        Popup(popupDame, "-", damage, " HP");
 
 
         if (CurrentHealth <= 0)
@@ -89,11 +93,14 @@ public class Enemyhealth : MonoBehaviour
 
             Destroy(gameObject);
             Instantiate(SpawnItems[Random.Range(0, SpawnItems.Length)], gameObject.transform.position, Quaternion.identity);
-           
-
         }
     }
 
+    void Popup(GameObject PopUp, string text1, float HP, string text2)
+    {
+        GameObject TakeopUp = Instantiate(PopUp, new Vector3(PositionObject.transform.position.x - 0.5f, PositionObject.transform.position.y + 1f, 0), Quaternion.identity);
+        TakeopUp.GetComponentInChildren<TextMesh>().text = text1 + HP.ToString() + text2;
+    }
 
 
 }

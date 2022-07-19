@@ -20,7 +20,28 @@ public class SkillManager : MonoBehaviour
 
     ManaManager MP;
 
-    
+    [Header("Cooldown Skill")]
+    [SerializeField] float coolDownBlueThunder;
+    [SerializeField] float coolDownGoldThunder;
+    [SerializeField] float coolDownSkillThree;
+
+    private bool isCoolDownBlueThunder = true;
+    private bool isCoolDownGoldThunder = true;
+    private bool isCoolDownSkillThree = true;
+    private float timerBlueThunder;
+    private float timerGoldThunder;
+    private float timerSkillThree;
+
+    public bool IsCoolDownBlueThunder { get => isCoolDownBlueThunder; set => isCoolDownBlueThunder = value; }
+    public bool IsCoolDownGoldThunder { get => isCoolDownGoldThunder; set => isCoolDownGoldThunder = value; }
+    public bool IsCoolDownSkillThree { get => isCoolDownSkillThree; set => isCoolDownSkillThree = value; }
+    public float TimerBlueThunder { get => timerBlueThunder; set => timerBlueThunder = value; }
+    public float TimerGoldThunder { get => timerGoldThunder; set => timerGoldThunder = value; }
+    public float TimerSkillThree { get => timerSkillThree; set => timerSkillThree = value; }
+    public float CoolDownBlueThunder { get => coolDownBlueThunder; set => coolDownBlueThunder = value; }
+    public float CoolDownGoldThunder { get => coolDownGoldThunder; set => coolDownGoldThunder = value; }
+    public float CoolDownSkillThree { get => coolDownSkillThree; set => coolDownSkillThree = value; }
+
     private void Start()
     {
         MP = GetComponent<ManaManager>();
@@ -34,19 +55,23 @@ public class SkillManager : MonoBehaviour
     public void AttackGoldThunder()
     {
 
-        if (Input.GetKeyDown(KeyCode.K))
+        if (SimpleInput.GetKeyDown(KeyCode.K) && MP.CurrentMana >= goldThunderMp && IsCoolDownGoldThunder)
         {
-
+            MP.DecreasingMp(goldThunderMp);
+            IsCoolDownGoldThunder = false;
             StartCoroutine(InsGoldThunder());
+            StartCoroutine(CoolDownGold());
         }
     }
     public void AttackBlueThunder()
     {
 
-        if (Input.GetKeyDown(KeyCode.L))
+        if (SimpleInput.GetKeyDown(KeyCode.L)&& MP.CurrentMana >= blueThunderMp && IsCoolDownBlueThunder)
         {
+            MP.DecreasingMp(blueThunderMp);
+            IsCoolDownBlueThunder = false;
             StartCoroutine(InsBlueThunder());
-
+            StartCoroutine(CoolDownBlue());
         }
     }
 
@@ -67,6 +92,20 @@ public class SkillManager : MonoBehaviour
         GameObject Blue = Instantiate(BlueThunder, Pos.transform.position, Quaternion.identity);
         yield return new WaitForSeconds(0.5f);
         Destroy(Blue);
+    }
+
+    IEnumerator CoolDownBlue()
+    {
+        TimerBlueThunder = CoolDownBlueThunder;
+        yield return new WaitForSeconds(CoolDownBlueThunder);        
+        IsCoolDownBlueThunder = true;
+    }
+
+    IEnumerator CoolDownGold()
+    {
+        TimerGoldThunder = CoolDownGoldThunder;
+        yield return new WaitForSeconds(CoolDownGoldThunder);
+        IsCoolDownGoldThunder = true;
     }
 
 

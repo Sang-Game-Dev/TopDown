@@ -18,15 +18,15 @@ public class PlayerController : MonoBehaviour
     }
     private void Update()
     {
-        rb.velocity = new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical")) * speed * Time.deltaTime;
+        rb.velocity = new Vector2(SimpleInput.GetAxisRaw("Horizontal"), SimpleInput.GetAxisRaw("Vertical")) * speed * Time.deltaTime;
 
         animator.SetFloat("moveX", rb.velocity.x);
         animator.SetFloat("moveY", rb.velocity.y);
 
-        if (Input.GetAxisRaw("Horizontal") == 1 || Input.GetAxisRaw("Horizontal") == -1 || Input.GetAxisRaw("Vertical") == 1 || Input.GetAxisRaw("Vertical") == -1)
+        if (SimpleInput.GetAxisRaw("Horizontal") == 1 || SimpleInput.GetAxisRaw("Horizontal") == -1 || SimpleInput.GetAxisRaw("Vertical") == 1 || SimpleInput.GetAxisRaw("Vertical") == -1)
         {
-            animator.SetFloat("lastMoveX", Input.GetAxisRaw("Horizontal"));
-            animator.SetFloat("lastMoveY", Input.GetAxisRaw("Vertical"));
+            animator.SetFloat("lastMoveX", SimpleInput.GetAxisRaw("Horizontal"));
+            animator.SetFloat("lastMoveY", SimpleInput.GetAxisRaw("Vertical"));
         }
 
         if (isAttacking)
@@ -40,13 +40,12 @@ public class PlayerController : MonoBehaviour
             }
 
         }
-        if (Input.GetKeyDown(KeyCode.J))
+        if (SimpleInput.GetKeyDown(KeyCode.J))
         {
             attackCounter = attackTime;
             animator.SetBool("isAttacking", true);
             isAttacking = true;
         }
-
     }
 
 

@@ -260,6 +260,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxHealth: 150
   flashLength: 0.5
+  popupDame: {fileID: 249009438545698684, guid: 462a8f1b7bb6c0341b76032ffe1582d0,
+    type: 3}
   healthBar: {fileID: 6942701564760005199}
   SpawnItems:
   - {fileID: 4961265036948539066, guid: 816e034c537d6d347ad39090483e9c83, type: 3}

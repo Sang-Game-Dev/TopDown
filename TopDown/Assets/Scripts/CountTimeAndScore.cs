@@ -7,8 +7,10 @@ public class CountTimeAndScore : MonoBehaviour
 {
     [SerializeField] Text countDownTime;
     [SerializeField] Text countScull;
+    [SerializeField] Text countScore;
     [SerializeField] float timer;
 
+    [SerializeField] HealthManager player;
     private float currentTime;
     private float remainingTime;
 
@@ -26,7 +28,8 @@ public class CountTimeAndScore : MonoBehaviour
     void Update()
     {
         CountDownTime();
-        CountScore(12);
+        CountScull(12,5);
+        CountScore(player.Score);
     }
 
     void CountDownTime()
@@ -42,8 +45,13 @@ public class CountTimeAndScore : MonoBehaviour
     }
 
 
-    void CountScore(float Scull)
+    void CountScull(float Scull,float maxScull)
     {
-        countScull.text = ": " + Scull.ToString("0");
+        countScull.text = ": " + Scull.ToString("0") +"/" +maxScull.ToString("0");
+    }
+
+    void CountScore(float Score)
+    {
+        countScore.text = ": " + Score.ToString("0");
     }
 }
