@@ -197,7 +197,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1900091572, guid: e293a96141db8f54880b4bb3cadda0d0, type: 3}
       propertyPath: goldThunderMp
-      value: 100
+      value: 1000
       objectReference: {fileID: 0}
     - target: {fileID: 1900091572, guid: e293a96141db8f54880b4bb3cadda0d0, type: 3}
       propertyPath: tornadoThunderMp
@@ -259,6 +259,11 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 249009438545698684, guid: 23083520636757f4e8339a934bce3d64,
         type: 3}
+    - target: {fileID: 6633577777053665049, guid: e293a96141db8f54880b4bb3cadda0d0,
+        type: 3}
+      propertyPath: speed
+      value: 600
+      objectReference: {fileID: 0}
     - target: {fileID: 6633577777053665052, guid: e293a96141db8f54880b4bb3cadda0d0,
         type: 3}
       propertyPath: m_Name
@@ -2886,7 +2891,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4c148502c7a9f8d418b1060dd30106e5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxMana: 10000
+  maxMana: 1000
   MP: {fileID: 84597880}
   Upstamina: 100
   popUpMP: {fileID: 249009438545698684, guid: 1cbc2581edc874e4eae645e15d7a6f59, type: 3}

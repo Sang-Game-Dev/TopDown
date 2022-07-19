@@ -6,8 +6,7 @@ using UnityEngine.SceneManagement;
 public class HurtPlayer : MonoBehaviour
 {
     private HealthManager healthMan;
-    private float waitToHurt = 1f;
-    private bool isTouching = false;
+    private bool isTouching = true;
 
     public int Damage;
 
@@ -23,44 +22,24 @@ public class HurtPlayer : MonoBehaviour
     {
 
 
-        if (isTouching)
-        {
-            waitToHurt -= Time.deltaTime;
-
-            if(waitToHurt <= 0)
-            {
-                healthMan.HurtPlayer(Damage);
-                waitToHurt = 1f;
-                
-            }
-        
-        }
-
-
 
     }
 
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.tag == "Player")
+        if (other.tag == "Player" && isTouching == true)
         {
             other.gameObject.GetComponent<HealthManager>().HurtPlayer(Damage);
-        }
-    }
-
-    private void OnTriggerStay2D(Collider2D other)
-    {
-        if (other.tag == "Player")
-            isTouching = true;
-    }
-
-    private void OnTriggerExit2D(Collider2D other)
-    {
-        if (other.tag == "Player")
-        {
             isTouching = false;
-            waitToHurt = 2f;
+            StartCoroutine(HurtCoolDown());
         }
+    }
+
+
+    IEnumerator HurtCoolDown()
+    {
+        yield return new WaitForSeconds(0.5f);
+        isTouching = true;
     }
 }
