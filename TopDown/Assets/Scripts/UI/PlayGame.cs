@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayGame : MonoBehaviour
 {
@@ -31,5 +32,10 @@ public class PlayGame : MonoBehaviour
         buttonSettings.SetActive(true);
         button.SetActive(true);
         settingsMenu.SetActive(false);
+    }
+
+    public void Home(string name)
+    {
+        SceneManager.LoadScene(name);
     }
 }
