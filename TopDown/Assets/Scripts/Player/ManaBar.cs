@@ -15,4 +15,7 @@ public class ManaBar : MonoBehaviour
     {
         slider.value = health;
     }
+
+
+
 }
