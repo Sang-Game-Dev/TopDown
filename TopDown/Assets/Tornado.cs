@@ -21,6 +21,6 @@ public class Tornado : MonoBehaviour
 
     void Speed()
     {
-        rg.velocity = new Vector2(transform.position.x *Time.deltaTime*20, transform.position.y*Time.deltaTime*-1*20);
+        rg.velocity = new Vector2(transform.position.x +3f, transform.position.y+3f);
     }
 }

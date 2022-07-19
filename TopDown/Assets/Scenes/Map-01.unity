@@ -149,17 +149,9 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 775516497, guid: e293a96141db8f54880b4bb3cadda0d0, type: 3}
-      propertyPath: MP
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 775516497, guid: e293a96141db8f54880b4bb3cadda0d0, type: 3}
       propertyPath: mana
       value: 
       objectReference: {fileID: 1456134906}
-    - target: {fileID: 1900091572, guid: e293a96141db8f54880b4bb3cadda0d0, type: 3}
-      propertyPath: goldThunderMp
-      value: 150
-      objectReference: {fileID: 0}
     - target: {fileID: 4455904906267510801, guid: e293a96141db8f54880b4bb3cadda0d0,
         type: 3}
       propertyPath: HP
@@ -2037,16 +2029,6 @@ PrefabInstance:
       propertyPath: m_Camera
       value: 
       objectReference: {fileID: 1325196176}
-    - target: {fileID: 1017627295039198123, guid: 64b2420ad7c3b124ebe0c40953f08f5b,
-        type: 3}
-      propertyPath: m_SortingOrder
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 1017627295039198123, guid: 64b2420ad7c3b124ebe0c40953f08f5b,
-        type: 3}
-      propertyPath: m_SortingLayerID
-      value: -295383793
-      objectReference: {fileID: 0}
     - target: {fileID: 1017627295039198124, guid: 64b2420ad7c3b124ebe0c40953f08f5b,
         type: 3}
       propertyPath: m_Name
@@ -6355,11 +6337,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: -----PlayGame-----
       objectReference: {fileID: 0}
-    - target: {fileID: 4422662800689976694, guid: a1f345b371b6d1343904591a7583ce28,
-        type: 3}
-      propertyPath: m_Value
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 4422662800855650883, guid: a1f345b371b6d1343904591a7583ce28,
         type: 3}
       propertyPath: m_AnchorMax.x
@@ -6385,8 +6362,7 @@ PrefabInstance:
       propertyPath: m_AnchorMax.y
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 84597880, guid: a1f345b371b6d1343904591a7583ce28, type: 3}
+    m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a1f345b371b6d1343904591a7583ce28, type: 3}
 --- !u!1 &2118476938
 GameObject:
