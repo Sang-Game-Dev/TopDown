@@ -1,13 +1,13 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class ManaManager : MonoBehaviour
 {
     [Header("Slider Mana")]
-    
-    [SerializeField] int maxMana;
-    public ManaBar MP;
+    [SerializeField] Slider mana;
+    [SerializeField] float maxMana;
     private float currentMana;
     [SerializeField] float Upstamina;
     private Transform PositionObject;
@@ -22,7 +22,6 @@ public class ManaManager : MonoBehaviour
     void Start()
     {
         CurrentMana = maxMana;
-        MP.SetMaxMP(maxMana);
         PositionObject = GetComponent<Transform>();
     }
 
@@ -30,9 +29,13 @@ public class ManaManager : MonoBehaviour
     void Update()
     {
         IncreasingMp();
+        Mana();
     }
 
-    
+    void Mana()
+    {
+        mana.value = CurrentMana / maxMana;
+    }
 
     public void IncreasingMp()
     {
