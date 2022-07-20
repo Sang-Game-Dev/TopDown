@@ -20,8 +20,10 @@ public class Enemyhealth : MonoBehaviour
 
     public GameObject[] SpawnItems;
     bool isDrop ;
+    private float scull = 0;
 
     public int CurrentHealth { get => currentHealth; set => currentHealth = value; }
+    public float Scull { get => scull; set => scull = value; }
 
 
 
@@ -86,11 +88,8 @@ public class Enemyhealth : MonoBehaviour
         CurrentHealth -= damage;
         healthBar.SetHealth(CurrentHealth);
         Popup(popupDame, "-", damage, " HP");
-
-
         if (CurrentHealth <= 0)
         {
-
             Destroy(gameObject);
             Instantiate(SpawnItems[Random.Range(0, SpawnItems.Length)], gameObject.transform.position, Quaternion.identity);
         }
