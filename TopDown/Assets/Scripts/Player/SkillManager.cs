@@ -25,6 +25,12 @@ public class SkillManager : MonoBehaviour
     [SerializeField] float coolDownGoldThunder;
     [SerializeField] float coolDownSkillThree;
 
+    [Header("Sound SKill")]
+    [SerializeField] AudioClip blueThunderSound;
+    [SerializeField] AudioClip goldThunderSound;
+    [SerializeField] AudioClip tornadoSound;
+
+
     private bool isCoolDownBlueThunder = true;
     private bool isCoolDownGoldThunder = true;
     private bool isCoolDownSkillThree = true;
@@ -58,6 +64,7 @@ public class SkillManager : MonoBehaviour
 
         if (SimpleInput.GetKeyDown(KeyCode.K) && MP.CurrentMana >= goldThunderMp && IsCoolDownGoldThunder)
         {
+            SoundEffect.instance.PlaySound(goldThunderSound);
             MP.DecreasingMp(goldThunderMp);
             IsCoolDownGoldThunder = false;
             StartCoroutine(InsGoldThunder());
