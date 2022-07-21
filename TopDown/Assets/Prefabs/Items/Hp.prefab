@@ -83,7 +83,7 @@ GameObject:
   - component: {fileID: 4365125619363570655}
   - component: {fileID: 4365125619363570654}
   - component: {fileID: 8949495868625001298}
-  - component: {fileID: -720576144858597249}
+  - component: {fileID: 8146699027906900052}
   m_Layer: 0
   m_Name: Hp
   m_TagString: HP
@@ -173,7 +173,7 @@ CircleCollider2D:
   m_Offset: {x: -0.0021657348, y: 0}
   serializedVersion: 2
   m_Radius: 0.2420339
---- !u!114 &-720576144858597249
+--- !u!114 &8146699027906900052
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -182,7 +182,8 @@ MonoBehaviour:
   m_GameObject: {fileID: 4365125619363570649}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 19d01c9d82f3379448be03b393dd01ee, type: 3}
+  m_Script: {fileID: 11500000, guid: cc77633a760acc74d9dd567be70a96b8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hp: 100
+  hp: 40
+  collectSounds: {fileID: 8300000, guid: 0c008ee3ee72a4362a35be25fa5de043, type: 3}

@@ -5,6 +5,7 @@ using UnityEngine;
 public class TakeMP : MonoBehaviour
 {
     [SerializeField] int MP;
+    [SerializeField] AudioClip collectSounds;
     // Start is called before the first frame update
     void Start()
     {
@@ -24,6 +25,7 @@ public class TakeMP : MonoBehaviour
             //SoundEffect.instance.PlaySound(sound);
             collision.GetComponent<ManaManager>().TakeMP(MP);
             Destroy(gameObject);
+            SoundEffect.instance.PlaySound(collectSounds);
         }
     }
 }

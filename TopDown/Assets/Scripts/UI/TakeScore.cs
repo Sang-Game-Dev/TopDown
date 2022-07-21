@@ -5,6 +5,7 @@ using UnityEngine;
 public class TakeScore : MonoBehaviour
 {
     [SerializeField] float score;
+    [SerializeField] AudioClip collectSounds;
     
     // Start is called before the first frame update
     void Start()
@@ -25,6 +26,7 @@ public class TakeScore : MonoBehaviour
             //SoundEffect.instance.PlaySound(sound);
             collision.GetComponent<HealthManager>().TakeScore(score);
             Destroy(gameObject);
+            SoundEffect.instance.PlaySound(collectSounds);
         }
     }
 }

@@ -5,6 +5,7 @@ using UnityEngine;
 public class TakeHp : MonoBehaviour
 {
     [SerializeField] int hp;
+    [SerializeField] AudioClip collectSounds;
     // Start is called before the first frame update
     void Start()
     {
@@ -23,6 +24,7 @@ public class TakeHp : MonoBehaviour
             //SoundEffect.instance.PlaySound(sound);
             collision.GetComponent<HealthManager>().TakeHP(hp);
             Destroy(gameObject);
+            SoundEffect.instance.PlaySound(collectSounds);
         }
     }
 }

@@ -83,7 +83,7 @@ GameObject:
   - component: {fileID: 7848827802203184802}
   - component: {fileID: 7848827802203184803}
   - component: {fileID: 7914020143895729122}
-  - component: {fileID: 7924119880327421877}
+  - component: {fileID: 2069990359765086584}
   m_Layer: 0
   m_Name: Exp
   m_TagString: minHP
@@ -173,7 +173,7 @@ CircleCollider2D:
   m_Offset: {x: -0.009745777, y: 0}
   serializedVersion: 2
   m_Radius: 0.26693976
---- !u!114 &7924119880327421877
+--- !u!114 &2069990359765086584
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -182,7 +182,8 @@ MonoBehaviour:
   m_GameObject: {fileID: 7848827802203184804}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 19d01c9d82f3379448be03b393dd01ee, type: 3}
+  m_Script: {fileID: 11500000, guid: cc77633a760acc74d9dd567be70a96b8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hp: 50
+  hp: 20
+  collectSounds: {fileID: 8300000, guid: 0c008ee3ee72a4362a35be25fa5de043, type: 3}
