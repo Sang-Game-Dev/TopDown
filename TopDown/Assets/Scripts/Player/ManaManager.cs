@@ -6,7 +6,7 @@ using UnityEngine.UI;
 public class ManaManager : MonoBehaviour
 {
     [Header("Slider Mana")]
-    [SerializeField] Slider mana;
+    [SerializeField] Image mana;
     [SerializeField] float maxMana;
     private float currentMana;
     [SerializeField] float Upstamina;
@@ -34,7 +34,7 @@ public class ManaManager : MonoBehaviour
 
     void Mana()
     {
-        mana.value = CurrentMana / maxMana;
+        mana.fillAmount = CurrentMana / maxMana;
     }
 
     public void IncreasingMp()

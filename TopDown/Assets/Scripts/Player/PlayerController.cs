@@ -34,7 +34,7 @@ public class PlayerController : MonoBehaviour
         //rb.velocity = new Vector2(x, y) * speed * Time.deltaTime;
         rb.velocity = new Vector2(x * speed, y * speed);
 
-        if (x > 0 || x < 0 || y >0 || y < 0)
+        if (x != 0 || y != 0)
         {
             animator.SetFloat("lastMoveX", SimpleInput.GetAxis("Horizontal"));
             animator.SetFloat("lastMoveY", SimpleInput.GetAxis("Vertical"));

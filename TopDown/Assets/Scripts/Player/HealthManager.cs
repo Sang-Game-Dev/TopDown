@@ -23,7 +23,8 @@ public class HealthManager : MonoBehaviour
 
     //public HealthBar HP;
     private Transform positionObject;
-    [SerializeField] Slider HeathBar;
+    //[SerializeField] Slider HeathBar;
+    [SerializeField] Image HeathBar;
 
     [Header("PopUp")]
     [SerializeField] GameObject popupDame;
@@ -92,7 +93,7 @@ public class HealthManager : MonoBehaviour
 
     void Heath()
     {
-        HeathBar.value = CurrentHealth*1f/ maxHealth*1f;
+        HeathBar.fillAmount = CurrentHealth*1f/ maxHealth*1f;
         //Debug.Log(CurrentHealth);
     }
 
