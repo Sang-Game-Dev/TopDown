@@ -22,7 +22,7 @@ public class PlayGame : MonoBehaviour
 
     public void Settings()
     {
-        Time.timeScale = 1f;
+        Time.timeScale = 0;
         buttonSettings.SetActive(false);
         button.SetActive(false);
         settingsMenu.SetActive(true);
@@ -30,6 +30,7 @@ public class PlayGame : MonoBehaviour
 
     public void Back()
     {
+        Time.timeScale = 1;
         buttonSettings.SetActive(true);
         button.SetActive(true);
         settingsMenu.SetActive(false);

@@ -284,7 +284,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 5
   maxRange: 3
-  minRange: 0.5
+  minRange: 0.75
   homePos: {fileID: 0}
 --- !u!1001 &7442320200088318383
 PrefabInstance:
