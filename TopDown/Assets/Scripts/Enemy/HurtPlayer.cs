@@ -31,7 +31,6 @@ public class HurtPlayer : MonoBehaviour
         if (other.tag == "Player" && isTouching == true)
         {
             other.gameObject.GetComponent<HealthManager>().HurtPlayer(Damage);
-            isTouching = false;
             StartCoroutine(HurtCoolDown());
         }
     }
@@ -39,6 +38,7 @@ public class HurtPlayer : MonoBehaviour
 
     IEnumerator HurtCoolDown()
     {
+        isTouching = false;
         yield return new WaitForSeconds(0.5f);
         isTouching = true;
     }

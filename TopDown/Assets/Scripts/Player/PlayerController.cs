@@ -4,12 +4,15 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
+    [SerializeField] AudioClip swordSound;
     [SerializeField] float speed;
     private Animator animator;
     Rigidbody2D rb;
     private float attackTime = .2f;
     private float attackCounter = .2f;
     private bool isAttacking;
+
+
 
     private void Start()
     {
@@ -42,6 +45,7 @@ public class PlayerController : MonoBehaviour
         }
         if (SimpleInput.GetKeyDown(KeyCode.J))
         {
+            SoundEffect.instance.PlaySound(swordSound);
             attackCounter = attackTime;
             animator.SetBool("isAttacking", true);
             isAttacking = true;

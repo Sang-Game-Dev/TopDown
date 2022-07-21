@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class Enemyhealth : MonoBehaviour
 {
+    [SerializeField] AudioClip hurtSound;
+    [SerializeField] AudioClip deathSound;
     private int currentHealth;
     [SerializeField] int maxHealth;
 
@@ -88,8 +90,10 @@ public class Enemyhealth : MonoBehaviour
         CurrentHealth -= damage;
         healthBar.SetHealth(CurrentHealth);
         Popup(popupDame, "-", damage, " HP");
+        SoundEffect.instance.PlaySound(hurtSound);
         if (CurrentHealth <= 0)
         {
+            SoundEffect.instance.PlaySound(deathSound);
             Destroy(gameObject);
             Instantiate(SpawnItems[Random.Range(0, SpawnItems.Length)], gameObject.transform.position, Quaternion.identity);
         }

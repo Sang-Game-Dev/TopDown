@@ -241,6 +241,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: de8a2332e3724d844b476c00db8ac129, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  hurtSound: {fileID: 8300000, guid: e4b5cb036b9a88e4ab186507a878b14d, type: 3}
+  deathSound: {fileID: 8300000, guid: b95d64e9faf32a547ab0ef1ee5f2dcb0, type: 3}
   maxHealth: 140
   flashLength: 0.5
   popupDame: {fileID: 249009438545698684, guid: 462a8f1b7bb6c0341b76032ffe1582d0,
@@ -282,7 +284,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 5
   maxRange: 3
-  minRange: 0.75
+  minRange: 0.5
   homePos: {fileID: 0}
 --- !u!1001 &1660835418
 PrefabInstance:

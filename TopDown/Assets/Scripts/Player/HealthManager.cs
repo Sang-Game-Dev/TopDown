@@ -29,6 +29,8 @@ public class HealthManager : MonoBehaviour
     [SerializeField] GameObject popupDame;
     [SerializeField] GameObject popupHp;
     [SerializeField] GameObject popupScore;
+    [SerializeField] AudioClip hurtSound;
+    [SerializeField] AudioClip deathSound;
 
     public float Score { get => score; set => score = value; }
     public Transform PositionObject { get => positionObject; set => positionObject = value; }
@@ -102,10 +104,11 @@ public class HealthManager : MonoBehaviour
         CurrentHealth -= damage;
         Popup(popupDame, "-", damage, " HP");
         //HP.SetHealth(CurrentHealth);
-        
 
-        if(CurrentHealth <= 0)
+        SoundEffect.instance.PlaySound(hurtSound);
+        if (CurrentHealth <= 0)
         {
+            SoundEffect.instance.PlaySound(deathSound);
             gameObject.SetActive(false);
         }
     }

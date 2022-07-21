@@ -148,6 +148,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 112330128, guid: e293a96141db8f54880b4bb3cadda0d0, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 245064555, guid: e293a96141db8f54880b4bb3cadda0d0, type: 3}
       propertyPath: ZombieSound
       value: 
@@ -196,9 +200,24 @@ PrefabInstance:
       objectReference: {fileID: 1020628028}
     - target: {fileID: 4455904906267510801, guid: e293a96141db8f54880b4bb3cadda0d0,
         type: 3}
+      propertyPath: hurtSound
+      value: 
+      objectReference: {fileID: 8300000, guid: 98258f6f70567304ebb34c62807a7257, type: 3}
+    - target: {fileID: 4455904906267510801, guid: e293a96141db8f54880b4bb3cadda0d0,
+        type: 3}
       propertyPath: maxHealth
       value: 1000
       objectReference: {fileID: 0}
+    - target: {fileID: 4455904906267510801, guid: e293a96141db8f54880b4bb3cadda0d0,
+        type: 3}
+      propertyPath: deathSound
+      value: 
+      objectReference: {fileID: 8300000, guid: 6f23ac238ab5a4f49be73856d2183a4e, type: 3}
+    - target: {fileID: 6633577777053665049, guid: e293a96141db8f54880b4bb3cadda0d0,
+        type: 3}
+      propertyPath: swordSound
+      value: 
+      objectReference: {fileID: 8300000, guid: bd48f7b5497375c4eba06d8a42979a54, type: 3}
     - target: {fileID: 6633577777053665052, guid: e293a96141db8f54880b4bb3cadda0d0,
         type: 3}
       propertyPath: m_Name
@@ -5006,10 +5025,6 @@ PrefabInstance:
       propertyPath: homePos
       value: 
       objectReference: {fileID: 1849232887}
-    - target: {fileID: 816784723, guid: 778ffbc11154b1f4bb59523748945e24, type: 3}
-      propertyPath: maxHealth
-      value: 150
-      objectReference: {fileID: 0}
     - target: {fileID: 7566522962608232624, guid: 778ffbc11154b1f4bb59523748945e24,
         type: 3}
       propertyPath: m_RootOrder
