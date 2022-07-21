@@ -8,8 +8,8 @@ public class PlayerController : MonoBehaviour
     [SerializeField] float speed;
     private Animator animator;
     Rigidbody2D rb;
-    private float attackTime = .2f;
-    private float attackCounter = .2f;
+    private float attackTime = .5f;
+    private float attackCounter = .5f;
     private bool isAttacking;
 
 
@@ -21,16 +21,31 @@ public class PlayerController : MonoBehaviour
     }
     private void Update()
     {
-        rb.velocity = new Vector2(SimpleInput.GetAxisRaw("Horizontal"), SimpleInput.GetAxisRaw("Vertical")) * speed * Time.deltaTime;
+        float x = SimpleInput.GetAxisRaw("Horizontal");
+        //x *= speed * Time.deltaTime;
+        float y = SimpleInput.GetAxisRaw("Vertical");
+        //y *= speed * Time.deltaTime;
+        //rb.velocity = new Vector2(SimpleInput.GetAxisRaw("Horizontal"), SimpleInput.GetAxisRaw("Vertical")) * speed * Time.deltaTime;
+        rb.velocity = new Vector2(x, y);
 
         animator.SetFloat("moveX", rb.velocity.x);
         animator.SetFloat("moveY", rb.velocity.y);
 
-        if (SimpleInput.GetAxisRaw("Horizontal") == 1 || SimpleInput.GetAxisRaw("Horizontal") == -1 || SimpleInput.GetAxisRaw("Vertical") == 1 || SimpleInput.GetAxisRaw("Vertical") == -1)
+        //rb.velocity = new Vector2(x, y) * speed * Time.deltaTime;
+        rb.velocity = new Vector2(x * speed, y * speed);
+
+        if (x > 0 || x < 0 || y >0 || y < 0)
         {
-            animator.SetFloat("lastMoveX", SimpleInput.GetAxisRaw("Horizontal"));
-            animator.SetFloat("lastMoveY", SimpleInput.GetAxisRaw("Vertical"));
+            animator.SetFloat("lastMoveX", SimpleInput.GetAxis("Horizontal"));
+            animator.SetFloat("lastMoveY", SimpleInput.GetAxis("Vertical"));
         }
+
+        //if (SimpleInput.GetAxis("Horizontal") < 1 || SimpleInput.GetAxis("Horizontal") > -1 || SimpleInput.GetAxis("Vertical") < 1 || SimpleInput.GetAxis("Vertical") > -1)
+        //{
+        //    animator.SetFloat("lastMoveX", SimpleInput.GetAxis("Horizontal"));
+        //    animator.SetFloat("lastMoveY", SimpleInput.GetAxis("Vertical"));
+        //}
+
 
         if (isAttacking)
         {
