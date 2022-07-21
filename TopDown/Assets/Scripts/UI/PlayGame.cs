@@ -22,6 +22,7 @@ public class PlayGame : MonoBehaviour
 
     public void Settings()
     {
+        Time.timeScale = 1f;
         buttonSettings.SetActive(false);
         button.SetActive(false);
         settingsMenu.SetActive(true);
