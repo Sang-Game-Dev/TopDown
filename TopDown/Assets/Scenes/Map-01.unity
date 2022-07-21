@@ -2061,10 +2061,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1203460873}
     m_Modifications:
-    - target: {fileID: 1683262349, guid: 62389f183cb54834381e81d84aaa4eb2, type: 3}
-      propertyPath: maxHealth
-      value: 120
-      objectReference: {fileID: 0}
     - target: {fileID: 1683262350, guid: 62389f183cb54834381e81d84aaa4eb2, type: 3}
       propertyPath: homePos
       value: 
@@ -2354,11 +2350,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Zombie_06
-      objectReference: {fileID: 0}
-    - target: {fileID: 3424491424820789051, guid: 8975f1511deac834ab83d429f689755e,
-        type: 3}
-      propertyPath: maxHealth
-      value: 130
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8975f1511deac834ab83d429f689755e, type: 3}
@@ -3684,10 +3675,6 @@ PrefabInstance:
       propertyPath: homePos
       value: 
       objectReference: {fileID: 1130286032}
-    - target: {fileID: 816784723, guid: 778ffbc11154b1f4bb59523748945e24, type: 3}
-      propertyPath: maxHealth
-      value: 150
-      objectReference: {fileID: 0}
     - target: {fileID: 7566522962608232624, guid: 778ffbc11154b1f4bb59523748945e24,
         type: 3}
       propertyPath: m_RootOrder
@@ -3826,11 +3813,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Zombie_04 (3)
-      objectReference: {fileID: 0}
-    - target: {fileID: 935976667097061947, guid: b0530a61eb1e86c4d8714a4af038a5a1,
-        type: 3}
-      propertyPath: maxHealth
-      value: 130
       objectReference: {fileID: 0}
     - target: {fileID: 6069548509037178368, guid: b0530a61eb1e86c4d8714a4af038a5a1,
         type: 3}
