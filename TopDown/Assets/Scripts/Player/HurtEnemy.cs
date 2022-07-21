@@ -7,6 +7,7 @@ public class HurtEnemy : MonoBehaviour
     private Enemyhealth enemyhealth;
     public int Damage;
     HealthManager player;
+    [SerializeField] AudioClip ZombieSound;
 
 
     // Start is called before the first frame update
@@ -27,6 +28,7 @@ public class HurtEnemy : MonoBehaviour
             other.gameObject.GetComponent<Enemyhealth>().HurtEnemy(Damage);
             if(other.gameObject.GetComponent<Enemyhealth>().CurrentHealth <= 0)
             {
+                SoundEffect.instance.PlaySound(ZombieSound);
                 player.Scull++;
             }
         }

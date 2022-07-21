@@ -76,6 +76,7 @@ public class SkillManager : MonoBehaviour
 
         if (SimpleInput.GetKeyDown(KeyCode.L)&& MP.CurrentMana >= blueThunderMp && IsCoolDownBlueThunder)
         {
+            SoundEffect.instance.PlaySound(blueThunderSound);
             MP.DecreasingMp(blueThunderMp);
             IsCoolDownBlueThunder = false;
             StartCoroutine(InsBlueThunder());
@@ -86,6 +87,7 @@ public class SkillManager : MonoBehaviour
 
     public void AttackTornado()
     {
+        SoundEffect.instance.PlaySound(tornadoSound);
         Debug.Log("Skill 3");
     }
 

@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class HealthManager : MonoBehaviour
 {   
@@ -20,8 +21,9 @@ public class HealthManager : MonoBehaviour
 
     [Header("Slider bar")]
 
-    public HealthBar HP;
+    //public HealthBar HP;
     private Transform positionObject;
+    [SerializeField] Slider HeathBar;
 
     [Header("PopUp")]
     [SerializeField] GameObject popupDame;
@@ -36,9 +38,8 @@ public class HealthManager : MonoBehaviour
     void Start()
     {
         CurrentHealth = maxHealth;
-        HP.SetMaxHealth(maxHealth);
+       // HP.SetMaxHealth(maxHealth);
         PositionObject = GetComponent<Transform>();
-
         playerSprite = GetComponent<SpriteRenderer>();
         
     }
@@ -46,6 +47,7 @@ public class HealthManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        Heath();
         if (flashActive)
         {
             if(flashCounter > flashLength * .99f)
@@ -86,6 +88,12 @@ public class HealthManager : MonoBehaviour
         }
     }
 
+    void Heath()
+    {
+        HeathBar.value = CurrentHealth*1f/ maxHealth*1f;
+        //Debug.Log(CurrentHealth);
+    }
+
     public void HurtPlayer(int damage)
     {
         flashActive = true;
@@ -93,7 +101,7 @@ public class HealthManager : MonoBehaviour
 
         CurrentHealth -= damage;
         Popup(popupDame, "-", damage, " HP");
-        HP.SetHealth(CurrentHealth);
+        //HP.SetHealth(CurrentHealth);
         
 
         if(CurrentHealth <= 0)
