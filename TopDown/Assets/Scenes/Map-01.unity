@@ -226,7 +226,7 @@ PrefabInstance:
     - target: {fileID: 4455904906267510801, guid: e293a96141db8f54880b4bb3cadda0d0,
         type: 3}
       propertyPath: maxHealth
-      value: 50
+      value: 1000
       objectReference: {fileID: 0}
     - target: {fileID: 4455904906267510801, guid: e293a96141db8f54880b4bb3cadda0d0,
         type: 3}
@@ -236,7 +236,7 @@ PrefabInstance:
     - target: {fileID: 6633577777053665049, guid: e293a96141db8f54880b4bb3cadda0d0,
         type: 3}
       propertyPath: speed
-      value: 7
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 6633577777053665049, guid: e293a96141db8f54880b4bb3cadda0d0,
         type: 3}
