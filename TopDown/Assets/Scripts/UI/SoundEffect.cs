@@ -7,7 +7,7 @@ public class SoundEffect : MonoBehaviour
 {
     [SerializeField] AudioClip sound;
     [SerializeField] Slider volumeEffectSlider;
-    [SerializeField] Text numberEffect;
+    //[SerializeField] Text numberEffect;
 
     public static SoundEffect instance { get; private set; }
     private AudioSource source;
@@ -39,7 +39,7 @@ public class SoundEffect : MonoBehaviour
     public void ChangeEffectVolume()
     {
         source.volume = volumeEffectSlider.value;
-        numberEffect.text = (source.volume * 100).ToString("0") + "%";
+        //numberEffect.text = (source.volume * 100).ToString("0") + "%";
         if (volumeEffectSlider.value == 0)
         {
             SoundManager.instance.PlaySound(sound);

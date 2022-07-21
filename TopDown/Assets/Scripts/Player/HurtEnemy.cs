@@ -6,10 +6,13 @@ public class HurtEnemy : MonoBehaviour
 {
     private Enemyhealth enemyhealth;
     public int Damage;
+    HealthManager player;
+
+
     // Start is called before the first frame update
     void Start()
     {
-        
+        player = FindObjectOfType<HealthManager>();
     }
 
     // Update is called once per frame
@@ -22,6 +25,10 @@ public class HurtEnemy : MonoBehaviour
         if(other.tag == "Enemy")
         {
             other.gameObject.GetComponent<Enemyhealth>().HurtEnemy(Damage);
+            if(other.gameObject.GetComponent<Enemyhealth>().CurrentHealth <= 0)
+            {
+                player.Scull++;
+            }
         }
     }
 }

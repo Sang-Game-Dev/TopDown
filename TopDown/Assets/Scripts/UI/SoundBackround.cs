@@ -7,7 +7,7 @@ public class SoundBackround : MonoBehaviour
 {
     [SerializeField] AudioClip sound;
     [SerializeField] Slider volumeBackroundSlider;
-    [SerializeField] Text numberBackround;
+    //[SerializeField] Text numberBackround;
     //[SerializeField] private AudioClip Sound;
 
 
@@ -35,7 +35,7 @@ public class SoundBackround : MonoBehaviour
     public void ChangeBackroundVolume()
     {
         backround.volume = volumeBackroundSlider.value;
-        numberBackround.text = (backround.volume * 100).ToString("0") + "%";
+        //numberBackround.text = (backround.volume * 100).ToString("0") + "%";
         if (volumeBackroundSlider.value == 0)
         {
             SoundManager.instance.PlaySound(sound);

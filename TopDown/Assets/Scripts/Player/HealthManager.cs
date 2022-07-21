@@ -16,6 +16,7 @@ public class HealthManager : MonoBehaviour
 
     private bool flashActive;
     private float score;
+    private float scull;
 
     [Header("Slider bar")]
 
@@ -29,10 +30,12 @@ public class HealthManager : MonoBehaviour
 
     public float Score { get => score; set => score = value; }
     public Transform PositionObject { get => positionObject; set => positionObject = value; }
+    public int CurrentHealth { get => currentHealth; set => currentHealth = value; }
+    public float Scull { get => scull; set => scull = value; }
 
     void Start()
     {
-        currentHealth = maxHealth;
+        CurrentHealth = maxHealth;
         HP.SetMaxHealth(maxHealth);
         PositionObject = GetComponent<Transform>();
 
@@ -88,12 +91,12 @@ public class HealthManager : MonoBehaviour
         flashActive = true;
         flashCounter = flashLength;
 
-        currentHealth -= damage;
+        CurrentHealth -= damage;
         Popup(popupDame, "-", damage, " HP");
-        HP.SetHealth(currentHealth);
+        HP.SetHealth(CurrentHealth);
         
 
-        if(currentHealth <= 0)
+        if(CurrentHealth <= 0)
         {
             gameObject.SetActive(false);
         }
@@ -101,15 +104,15 @@ public class HealthManager : MonoBehaviour
 
     public void TakeHP(int HP)
     {
-        if (currentHealth < maxHealth)
+        if (CurrentHealth < maxHealth)
         {
-            currentHealth += HP;
+            CurrentHealth += HP;
             Popup(popupHp, "+", HP, " HP");
 
         }
         else
         {
-            currentHealth = maxHealth;
+            CurrentHealth = maxHealth;
             Debug.Log("HP was full");
             Popup(popupHp, "+", HP, " HP");
         }
@@ -119,6 +122,11 @@ public class HealthManager : MonoBehaviour
     {
         Score += score;
         Popup(popupScore, "+", score, " $");
+    }
+
+    public void TakeScull(float scull)
+    {
+        Scull += scull;
     }
 
     void Popup(GameObject PopUp, string text1, float HP, string text2)

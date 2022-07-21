@@ -18,6 +18,7 @@ public class CountTimeAndScore : MonoBehaviour
     public float RemainingTime { get => remainingTime; set => remainingTime = value; }
 
 
+
     // Start is called before the first frame update
     void Start()
     {
@@ -28,7 +29,7 @@ public class CountTimeAndScore : MonoBehaviour
     void Update()
     {
         CountDownTime();
-        CountScull(12,5);
+        CountScull(player.Scull);
         CountScore(player.Score);
     }
 
@@ -45,9 +46,9 @@ public class CountTimeAndScore : MonoBehaviour
     }
 
 
-    void CountScull(float Scull,float maxScull)
+    void CountScull(float Scull)
     {
-        countScull.text = ": " + Scull.ToString("0") +"/" +maxScull.ToString("0");
+        countScull.text = ": " + Scull.ToString("0");
     }
 
     void CountScore(float Score)
