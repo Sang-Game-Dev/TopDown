@@ -8,7 +8,7 @@ public class SkillManager : MonoBehaviour
 
     public GameObject GoldThunder;
     public GameObject BlueThunder;
-    public GameObject SkillThree;
+    public GameObject Tornado;
 
     public GameObject Pos;
 
@@ -57,6 +57,7 @@ public class SkillManager : MonoBehaviour
     {
         AttackGoldThunder();
         AttackBlueThunder();
+        AttackTornado();
     }
 
     public void AttackGoldThunder()
@@ -83,13 +84,29 @@ public class SkillManager : MonoBehaviour
             StartCoroutine(CoolDownBlue());
         }
     }
-
-
-    public void AttackTornado()
-    {
+     public void AttackTornado()
+     {
         SoundEffect.instance.PlaySound(tornadoSound);
-        Debug.Log("Skill 3");
+        StartCoroutine(InsTornado());
+        
+     }
+    
+    IEnumerator InsTornado()
+    {
+        yield return new WaitForSeconds(0);
+        GameObject tor = Instantiate(Tornado, new Vector2(Pos.transform.position.x+10, Pos.transform.position.y+10), Quaternion.identity);
+        yield return new WaitForSeconds(1f);
+        Destroy(tor);
     }
+
+
+    IEnumerator InsBlueThunder()
+    {
+        GameObject Blue = Instantiate(BlueThunder, Pos.transform.position, Quaternion.identity);
+        yield return new WaitForSeconds(0.5f);
+        Destroy(Blue);
+    }
+   
 
     IEnumerator InsGoldThunder()
     {
@@ -97,12 +114,10 @@ public class SkillManager : MonoBehaviour
         yield return new WaitForSeconds(0.5f);
         Destroy(Gold);
     }
-    IEnumerator InsBlueThunder()
-    {
-        GameObject Blue = Instantiate(BlueThunder, Pos.transform.position, Quaternion.identity);
-        yield return new WaitForSeconds(0.5f);
-        Destroy(Blue);
-    }
+    
+ 
+
+
 
     IEnumerator CoolDownBlue()
     {
@@ -120,9 +135,5 @@ public class SkillManager : MonoBehaviour
 
 
 
-    IEnumerator InsTornado()
-    {
-        yield return new WaitForSeconds(1f);
-
-    }  
+ 
 }

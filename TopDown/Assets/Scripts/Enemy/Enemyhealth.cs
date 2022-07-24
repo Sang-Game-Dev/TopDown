@@ -95,9 +95,19 @@ public class Enemyhealth : MonoBehaviour
         {
             SoundEffect.instance.PlaySound(deathSound);
             Destroy(gameObject);
-            Instantiate(SpawnItems[Random.Range(0, SpawnItems.Length)], gameObject.transform.position, Quaternion.identity);
+            StartCoroutine("SpawnRandom");
+            //Instantiate(SpawnItems[Random.Range(0, SpawnItems.Length)], gameObject.transform.position, Quaternion.identity);
+
         }
     }
+
+    IEnumerator SpawnRandom()
+    {
+        yield return new WaitForSeconds(0.5f);
+        Debug.Log("Spawn");
+        Instantiate(SpawnItems[Random.Range(0, SpawnItems.Length)], gameObject.transform.position, Quaternion.identity);
+    }
+
 
     void Popup(GameObject PopUp, string text1, float HP, string text2)
     {
