@@ -26,6 +26,7 @@ public class HurtEnemy : MonoBehaviour
         if(other.tag == "Enemy")
         {
             other.gameObject.GetComponent<Enemyhealth>().HurtEnemy(Damage);
+            Debug.Log("mmm");
             if(other.gameObject.GetComponent<Enemyhealth>().CurrentHealth <= 0)
             {   
                 player.Scull++;

@@ -27,6 +27,7 @@ public class CoolDownSkilll : MonoBehaviour
     {
         CoolDownSkillBlueThunder();
         CoolDownSkillGoldThunder();
+        CoolDownSkill();
 
     }
     //void SkillUI()
@@ -81,6 +82,23 @@ public class CoolDownSkilll : MonoBehaviour
             {
                 textGold.SetActive(false);
                 SkillGold.SetActive(false);
+            }
+        }
+    }
+
+    void CoolDownSkill()
+    {
+        if (player.IsCoolDownTornado == false)
+        {
+            textSkill3.SetActive(true);
+            Skill3.SetActive(true);
+            player.TimerSkillThree -= 1 * Time.deltaTime;
+            textSkill3.GetComponent<Text>().text = player.TimerSkillThree.ToString("0.0");
+            Skill3.GetComponent<Image>().fillAmount = player.TimerSkillThree / player.CoolDownSkillThree;
+            if (player.TimerSkillThree <= 0)
+            {
+                textSkill3.SetActive(false);
+                Skill3.SetActive(false);
             }
         }
     }

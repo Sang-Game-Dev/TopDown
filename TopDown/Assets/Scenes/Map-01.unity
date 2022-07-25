@@ -185,9 +185,18 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 8300000, guid: b95d64e9faf32a547ab0ef1ee5f2dcb0, type: 3}
     - target: {fileID: 1900091572, guid: e293a96141db8f54880b4bb3cadda0d0, type: 3}
+      propertyPath: Tornado
+      value: 
+      objectReference: {fileID: 5773543202481927278, guid: 5e7917a8c9565fd418db83aa8ba83458,
+        type: 3}
+    - target: {fileID: 1900091572, guid: e293a96141db8f54880b4bb3cadda0d0, type: 3}
       propertyPath: tornadoSound
       value: 
       objectReference: {fileID: 8300000, guid: 17482d66fa38f4e418944f538cc12b5d, type: 3}
+    - target: {fileID: 1900091572, guid: e293a96141db8f54880b4bb3cadda0d0, type: 3}
+      propertyPath: coolDownTornado
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1900091572, guid: e293a96141db8f54880b4bb3cadda0d0, type: 3}
       propertyPath: blueThunderSound
       value: 
@@ -198,11 +207,11 @@ PrefabInstance:
       objectReference: {fileID: 8300000, guid: 55041b61fbc3cdb4c9d1abd5dbe2b200, type: 3}
     - target: {fileID: 1900091572, guid: e293a96141db8f54880b4bb3cadda0d0, type: 3}
       propertyPath: coolDownBlueThunder
-      value: 10
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 1900091572, guid: e293a96141db8f54880b4bb3cadda0d0, type: 3}
       propertyPath: coolDownGoldThunder
-      value: 12
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 2089523112, guid: e293a96141db8f54880b4bb3cadda0d0, type: 3}
       propertyPath: m_IsActive
@@ -724,7 +733,7 @@ Transform:
   - {fileID: 1070859475}
   - {fileID: 592966746}
   m_Father: {fileID: 0}
-  m_RootOrder: 17
+  m_RootOrder: 18
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &131921592
 GameObject:
@@ -2497,7 +2506,7 @@ PrefabInstance:
     - target: {fileID: 2178993195809806970, guid: 83e8f71d612b500419ee49f30d5f8b2b,
         type: 3}
       propertyPath: m_RootOrder
-      value: 18
+      value: 17
       objectReference: {fileID: 0}
     - target: {fileID: 2178993195809806970, guid: 83e8f71d612b500419ee49f30d5f8b2b,
         type: 3}
@@ -6293,9 +6302,25 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 63.999977
       objectReference: {fileID: 0}
+    - target: {fileID: 1502757254, guid: a1f345b371b6d1343904591a7583ce28, type: 3}
+      propertyPath: key.m_key
+      value: 111
+      objectReference: {fileID: 0}
     - target: {fileID: 1684567208, guid: a1f345b371b6d1343904591a7583ce28, type: 3}
       propertyPath: m_SizeDelta.y
       value: 60
+      objectReference: {fileID: 0}
+    - target: {fileID: 1874944993, guid: a1f345b371b6d1343904591a7583ce28, type: 3}
+      propertyPath: m_Type
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1874944993, guid: a1f345b371b6d1343904591a7583ce28, type: 3}
+      propertyPath: m_FillAmount
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1874944993, guid: a1f345b371b6d1343904591a7583ce28, type: 3}
+      propertyPath: m_FillMethod
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 2120875679, guid: a1f345b371b6d1343904591a7583ce28, type: 3}
       propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Target

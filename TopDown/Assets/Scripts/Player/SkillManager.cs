@@ -1,4 +1,4 @@
-using System.Collections;
+﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -23,7 +23,7 @@ public class SkillManager : MonoBehaviour
     [Header("Cooldown Skill")]
     [SerializeField] float coolDownBlueThunder;
     [SerializeField] float coolDownGoldThunder;
-    [SerializeField] float coolDownSkillThree;
+    [SerializeField] float coolDownTornado;
 
     [Header("Sound SKill")]
     [SerializeField] AudioClip blueThunderSound;
@@ -33,20 +33,20 @@ public class SkillManager : MonoBehaviour
 
     private bool isCoolDownBlueThunder = true;
     private bool isCoolDownGoldThunder = true;
-    private bool isCoolDownSkillThree = true;
+    private bool isCoolDownTornado = true;
     private float timerBlueThunder;
     private float timerGoldThunder;
-    private float timerSkillThree;
+    private float timerTornado;
 
     public bool IsCoolDownBlueThunder { get => isCoolDownBlueThunder; set => isCoolDownBlueThunder = value; }
     public bool IsCoolDownGoldThunder { get => isCoolDownGoldThunder; set => isCoolDownGoldThunder = value; }
-    public bool IsCoolDownSkillThree { get => isCoolDownSkillThree; set => isCoolDownSkillThree = value; }
+    public bool IsCoolDownTornado { get => isCoolDownTornado; set => isCoolDownTornado = value; }
     public float TimerBlueThunder { get => timerBlueThunder; set => timerBlueThunder = value; }
     public float TimerGoldThunder { get => timerGoldThunder; set => timerGoldThunder = value; }
-    public float TimerSkillThree { get => timerSkillThree; set => timerSkillThree = value; }
+    public float TimerSkillThree { get => timerTornado; set => timerTornado = value; }
     public float CoolDownBlueThunder { get => coolDownBlueThunder; set => coolDownBlueThunder = value; }
     public float CoolDownGoldThunder { get => coolDownGoldThunder; set => coolDownGoldThunder = value; }
-    public float CoolDownSkillThree { get => coolDownSkillThree; set => coolDownSkillThree = value; }
+    public float CoolDownSkillThree { get => coolDownTornado; set => coolDownTornado = value; }
 
     private void Start()
     {
@@ -86,15 +86,20 @@ public class SkillManager : MonoBehaviour
     }
      public void AttackTornado()
      {
-        SoundEffect.instance.PlaySound(tornadoSound);
-        StartCoroutine(InsTornado());
-        
+        if(SimpleInput.GetKeyDown(KeyCode.O) && MP.CurrentMana >= tornadoThunderMp && IsCoolDownTornado)
+        {
+            SoundEffect.instance.PlaySound(tornadoSound);
+            MP.DecreasingMp(tornadoThunderMp);
+            IsCoolDownTornado = false;
+            StartCoroutine(InsTornado());
+            StartCoroutine(CoolDownTornado());
+
+        }
      }
     
     IEnumerator InsTornado()
     {
-        yield return new WaitForSeconds(0);
-        GameObject tor = Instantiate(Tornado, new Vector2(Pos.transform.position.x+10, Pos.transform.position.y+10), Quaternion.identity);
+        GameObject tor = Instantiate(Tornado, Pos.transform.position, Quaternion.identity);
         yield return new WaitForSeconds(1f);
         Destroy(tor);
     }
@@ -117,7 +122,12 @@ public class SkillManager : MonoBehaviour
     
  
 
-
+    IEnumerator CoolDownTornado()
+    {
+        timerTornado = coolDownTornado;
+        yield return new WaitForSeconds(coolDownTornado);
+        IsCoolDownTornado = true;
+    }
 
     IEnumerator CoolDownBlue()
     {
@@ -128,12 +138,12 @@ public class SkillManager : MonoBehaviour
 
     IEnumerator CoolDownGold()
     {
-        TimerGoldThunder = CoolDownGoldThunder;
+        timerGoldThunder = CoolDownGoldThunder;
         yield return new WaitForSeconds(CoolDownGoldThunder);
         IsCoolDownGoldThunder = true;
     }
 
 
 
- 
+
 }
