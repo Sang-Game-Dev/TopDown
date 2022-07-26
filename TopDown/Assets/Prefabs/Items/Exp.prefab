@@ -185,5 +185,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cc77633a760acc74d9dd567be70a96b8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hp: 20
+  hp: 30
   collectSounds: {fileID: 8300000, guid: 0c008ee3ee72a4362a35be25fa5de043, type: 3}
